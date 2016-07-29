@@ -1,10 +1,12 @@
+-- autosub.lua from https://gist.github.com/selsta/ce3fb37e775dbd15c698
+
 -- requires subliminal, version 1.0 or newer
 -- default keybinding: b
 -- add the following to your input.conf to change the default keybinding:
 -- keyname script_binding auto_load_subs
 local utils = require 'mp.utils'
 function load_sub_fn()
-    subl = "/usr/bin/subliminal3" -- use 'which subliminal' to find the path
+    subl = "subliminal" -- use 'which subliminal' to find the path
     mp.msg.info("Searching subtitle")
     mp.osd_message("Searching subtitle")
     t = {}
