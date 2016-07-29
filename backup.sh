@@ -2,9 +2,13 @@
 if [[ -z ${DST_DIR// } ]]; then
 	#export DST_DIR="/mnt/backup"
 	export DST_DIR="${HOME}/backup"
+else
+	export DST_DIR=`realpath "${DST_DIR}"`
 fi
 export BACKUP_DIR="${DST_DIR}/laptop_`date +%F`"
 mkdir -p "${BACKUP_DIR}/"
+
+cd "${HOME}/"
 
 # Private keys.
 echo "~/.ssh"
