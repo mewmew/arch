@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if err != nil {
+	return errutil.Err(err)
+}
+
+]]></content>
+	<tabTrigger>iferr</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
