@@ -5,6 +5,7 @@ sudo pacman -Sy \
 	gdb \
 	ghc \
 	llvm \
+	ltrace \
 	python \
 	python-pip \
 	ruby \

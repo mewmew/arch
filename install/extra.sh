@@ -7,7 +7,6 @@ sudo pacman -Sy \
 	gparted \
 	graphviz \
 	lsof \
-	ltrace \
 	lxrandr \
 	lxtask \
 	macchanger \
