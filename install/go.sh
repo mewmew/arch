@@ -4,7 +4,7 @@ git clone https://go.googlesource.com/go.git ~/go
 cp -r ~/go ~/go1.4
 cd ~/go1.4/src
 git checkout release-branch.go1.4
-time ./all.bash
+time CGO_ENABLED=0 ./all.bash
 # Install Go tip.
-cd ~/go
+cd ~/go/src
 time ./all.bash
