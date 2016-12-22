@@ -5,5 +5,6 @@ sudo pacman -Sy \
 	xf86-video-intel \
 	xorg-server \
 	xorg-server-utils \
+	xorg-xev \
 	xorg-xinit \
 	xterm \
