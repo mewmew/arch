@@ -10,3 +10,6 @@ sudo pacman -S \
 	pulseaudio \
 	pulseaudio-alsa \
 	pulseaudio-bluetooth \
+
+# TODO: Check if needed.
+#sudo gpasswd -a u audio

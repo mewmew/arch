@@ -6,9 +6,14 @@ sudo pacman -Sy \
 	ghc \
 	llvm \
 	ltrace \
+	mercurial \
+	nasm \
 	python \
 	python-pip \
 	ruby \
 	strace \
 	svn \
 	vbindiff \
+
+packer -S \
+	edb-debugger \

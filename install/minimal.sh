@@ -12,7 +12,9 @@ sudo pacman -Sy \
 	git \
 	gmrun \
 	grc \
+	net-tools \
 	openbox \
+	openbsd-netcat \
 	openssh \
 	p7zip \
 	rsync \
@@ -27,6 +29,7 @@ sudo pacman -Sy \
 	wireless_tools \
 	wpa_supplicant \
 	zip \
+
 
 packer -S \
 	lwt-git \

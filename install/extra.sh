@@ -1,6 +1,9 @@
 #!/bin/bash
 sudo pacman -Sy \
+	bchunk \
+	blender \
 	bless \
+	ccd2iso \
 	dosfstools \
 	evince \
 	feh \
@@ -10,7 +13,10 @@ sudo pacman -Sy \
 	lxrandr \
 	lxtask \
 	macchanger \
+	mdf2iso \
+	nrg2iso \
 	openvpn \
+	optipng \
 	powertop \
 	qemu \
 	redshift \
@@ -20,17 +26,20 @@ sudo pacman -Sy \
 	scrot \
 	slock \
 	speedcrunch \
+	srm \
 	texlive-core \
 	texlive-latexextra \
 	thunderbird \
+	tiled \
 	traceroute \
 	transmission-gtk \
 	tree \
+	virtualbox \
 	wireshark-gtk \
 	xcompmgr \
 
 packer -S \
 	cv-git \
 	duff \
-	youtube-dl-git \
 	wxhexeditor-git \
+	youtube-dl-git \
