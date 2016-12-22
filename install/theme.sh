@@ -3,7 +3,7 @@
 sudo bash -c "cat >> /etc/pacman.conf <<'_EOF'
 
 [infinality-bundle]
-Server = http://bohoomil.com/repo/$arch
+Server = http://bohoomil.com/repo/\$arch
 
 [infinality-bundle-fonts]
 Server = http://bohoomil.com/repo/fonts
