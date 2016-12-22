@@ -2,6 +2,7 @@ set fish_plugins autojump
 source /etc/profile.d/autojump.fish
 set AUTOJUMP_IGNORE_CASE = 1
 
+set -x EDITOR 'geany -i'
 set -x PATH /home/u/go/bin $PATH
 set -x PATH /home/u/goget/bin $PATH
 set -x PATH /home/u/Desktop/go/bin $PATH
@@ -33,10 +34,10 @@ alias ..... 'cd ../../../..'
 alias ...... 'cd ../../../../..'
 
 # ref: http://www.projectatomic.io/blog/2015/08/why-we-dont-let-non-root-users-run-docker-in-centos-fedora-or-rhel/
-alias docker="sudo /usr/bin/docker"
+alias docker='sudo /usr/bin/docker'
 
 # Calendar start on monday.
-alias cal="cal -m"
+alias cal='cal -m'
 
 # Better diff.
 alias diff='grc diff -u'
