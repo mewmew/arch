@@ -1,0 +1,36 @@
+#!/bin/bash
+sudo pacman -Sy \
+	bless \
+	dosfstools \
+	evince \
+	feh \
+	gparted \
+	graphviz \
+	lsof \
+	ltrace \
+	lxrandr \
+	lxtask \
+	macchanger \
+	openvpn \
+	powertop \
+	qemu \
+	redshift \
+	rlwrap \
+	ruby \
+	screen \
+	scrot \
+	slock \
+	speedcrunch \
+	texlive-core \
+	texlive-latexextra \
+	thunderbird \
+	traceroute \
+	transmission-gtk \
+	tree \
+	wireshark-gtk \
+
+packer -S \
+	cv-git \
+	duff \
+	youtube-dl-git \
+	wxhexeditor-git \
