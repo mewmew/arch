@@ -27,6 +27,7 @@ sudo pacman -Sy \
 	transmission-gtk \
 	tree \
 	wireshark-gtk \
+	xcompmgr \
 
 packer -S \
 	cv-git \
