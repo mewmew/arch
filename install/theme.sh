@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo bash -c "cat >> /etc/pacman.conf <<'_EOF'
+sudo bash -c "grep -q infinality-bundle /etc/pacman.conf || cat >> /etc/pacman.conf <<'_EOF'
 
 [infinality-bundle]
 Server = http://bohoomil.com/repo/\$arch
@@ -8,6 +8,8 @@ Server = http://bohoomil.com/repo/\$arch
 [infinality-bundle-fonts]
 Server = http://bohoomil.com/repo/fonts
 _EOF"
+
+sudo pacman-key --lsign-key 962DDE58
 
 sudo pacman -Sy \
 	elementary-icon-theme \
