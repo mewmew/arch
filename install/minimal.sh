@@ -30,7 +30,6 @@ sudo pacman -Sy \
 	wpa_supplicant \
 	zip \
 
-
 packer -S \
 	lwt-git \
 	sublime-text-dev \

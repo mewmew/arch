@@ -17,7 +17,6 @@ sudo pacman -Sy \
 	lxappearance \
 	ttf-hack \
 
-
 packer -S \
 	ibfonts-meta-base \
 	ibfonts-meta-extended \
