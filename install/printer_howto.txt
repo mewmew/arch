@@ -1,0 +1,3 @@
+sudo systemctl start org.cups.cupsd.service
+# add printer unit to cups
+system-config-printer

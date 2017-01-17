@@ -2,4 +2,5 @@
 sudo pacman -Sy \
 	cups \
 	hplip \
-	system-printer-config \
+	python2-gnomekeyring \
+	system-config-printer \
