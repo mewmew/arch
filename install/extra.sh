@@ -9,6 +9,7 @@ sudo pacman -Sy \
 	feh \
 	gparted \
 	graphviz \
+	hardinfo \
 	lsof \
 	lxrandr \
 	lxtask \
