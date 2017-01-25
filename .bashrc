@@ -9,6 +9,7 @@ export PATH=/home/u/Desktop/go/bin:$PATH
 export PATH=/home/u/.gem/ruby/2.3.0/bin:$PATH
 export GOPATH=/home/u/goget:/home/u/Desktop/go
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+export FREETYPE_PROPERTIES='truetype:interpreter-version=40'
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
