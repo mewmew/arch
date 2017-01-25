@@ -19,5 +19,5 @@ sudo pacman -S \
 	t1-cursor-ib \
 	ttf-gelasio-ib \
 
-sudo packer -S \
+packer -S \
 	packer -S fonts-meta-extended-lt \
