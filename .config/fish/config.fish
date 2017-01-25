@@ -9,6 +9,7 @@ set -x PATH /home/u/Desktop/go/bin $PATH
 set -x PATH /home/u/.gem/ruby/2.3.0/bin $PATH
 set -x GOPATH /home/u/goget:/home/u/Desktop/go
 set -x _JAVA_OPTIONS '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+set -x FREETYPE_PROPERTIES 'truetype:interpreter-version=40'
 
 function fish_user_key_bindings
     # Alt+l : print the file contents of the current folder.
