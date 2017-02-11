@@ -22,14 +22,14 @@ sudo pacman -Sy \
 	qemu \
 	redshift \
 	rlwrap \
+	rmlint \
 	ruby \
 	screen \
 	scrot \
 	slock \
 	speedcrunch \
 	srm \
-	texlive-core \
-	texlive-latexextra \
+	texlive-most \
 	thunderbird \
 	tiled \
 	traceroute \
