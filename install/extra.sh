@@ -7,6 +7,7 @@ sudo pacman -Sy \
 	dosfstools \
 	evince \
 	feh \
+	gdmap \
 	gparted \
 	graphviz \
 	hardinfo \
