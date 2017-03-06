@@ -28,7 +28,6 @@ end
 set fish_greeting ""
 
 # Aliases
-alias -='cd -'
 alias ...='cd ../..'
 alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
