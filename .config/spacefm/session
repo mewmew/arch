@@ -1,0 +1,10 @@
+[MOD]
+tab_new_here-key=116
+tab_new_here-keymod=4
+panel1_show_devmon-key=100
+panel1_show_devmon-keymod=4
+panel1_list_detailed-b=2
+panel1_list_icons-b=1
+panel1_list_compact-b=2
+panel1_list_large-b=1
+panel1_font_file-s=Sans 12
