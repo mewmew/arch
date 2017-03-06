@@ -18,7 +18,6 @@ sudo pacman -Sy \
 	openssh \
 	p7zip \
 	rsync \
-	spacefm \
 	time \
 	tint2 \
 	truecrypt \
@@ -32,6 +31,7 @@ sudo pacman -Sy \
 
 packer -S \
 	lwt-git \
+	spacefm \
 	sublime-text-dev \
 
 sudo ln -s /usr/share/autojump/autojump.fish /etc/profile.d/autojump.fish
