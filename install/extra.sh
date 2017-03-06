@@ -4,6 +4,7 @@ sudo pacman -Sy \
 	blender \
 	bless \
 	ccd2iso \
+	dnsmasq \
 	dosfstools \
 	evince \
 	feh \
@@ -11,6 +12,7 @@ sudo pacman -Sy \
 	gparted \
 	graphviz \
 	hardinfo \
+	hostapd \
 	lsof \
 	lxrandr \
 	lxtask \
