@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo pacman -Sy \
+	adobe-source-code-pro-fonts \
 	elementary-icon-theme \
 	gtk-engine-murrine \
 	lxappearance \
