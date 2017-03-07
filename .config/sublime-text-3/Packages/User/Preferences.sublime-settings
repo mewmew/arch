@@ -1,6 +1,7 @@
 {
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -10,5 +11,5 @@
 		80
 	],
 	"tab_size": 3,
-	"trim_trailing_white_space_on_save": true,
+	"trim_trailing_white_space_on_save": true
 }

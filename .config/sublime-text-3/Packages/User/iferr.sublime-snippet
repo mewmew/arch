@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 if err != nil {
-	return errutil.Err(err)
+	return errors.WithStack(err)
 }
 
 ]]></content>
