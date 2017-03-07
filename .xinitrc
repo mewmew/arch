@@ -3,5 +3,6 @@ redshift &
 #sleep 5 && ./bin/thyme.sh &
 xset -b &
 xcompmgr &
+./xmod.sh &
 ./bin/rand_wall_local_loop.sh &
 openbox
