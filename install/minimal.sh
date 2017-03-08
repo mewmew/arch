@@ -20,10 +20,10 @@ sudo pacman -Sy \
 	rsync \
 	time \
 	tint2 \
-	truecrypt \
 	udisks2 \
 	unrar \
 	unzip \
+	veracrypt \
 	wget \
 	wireless_tools \
 	wpa_supplicant \
