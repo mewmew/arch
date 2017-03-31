@@ -1,8 +1,8 @@
 tint2 &
 redshift &
 #sleep 5 && ./bin/thyme.sh &
-xset -b &
+sleep 5 && xset -b &
 xcompmgr &
 ./xmod.sh &
-./bin/rand_wall_local_loop.sh &
+./bin/rand_wall_loop.sh &
 openbox
