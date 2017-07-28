@@ -7,6 +7,7 @@ sudo pacman -Sy \
 	dnsmasq \
 	dosfstools \
 	evince \
+	fbida \
 	feh \
 	gdmap \
 	gparted \
