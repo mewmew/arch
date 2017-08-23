@@ -22,6 +22,7 @@ sudo pacman -Sy \
 	nrg2iso \
 	openvpn \
 	optipng \
+	pkgfile \
 	powertop \
 	qemu \
 	redshift \
