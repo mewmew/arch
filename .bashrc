@@ -3,10 +3,11 @@
 #
 
 export EDITOR='geany -i'
-export PATH=/home/u/go/bin:$PATH
 export PATH=/home/u/goget/bin:$PATH
 export PATH=/home/u/Desktop/go/bin:$PATH
+export PATH=/home/u/go/bin:$PATH
 export PATH=/home/u/.gem/ruby/2.4.0/bin:$PATH
+export PATH=/home/u/Desktop/MiniZincIDE-2.1.5-bundle-linux-x86_64:$PATH
 export GOPATH=/home/u/goget:/home/u/Desktop/go
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 export FREETYPE_PROPERTIES='truetype:interpreter-version=40'
@@ -38,3 +39,7 @@ alias xout='xclip -out'
 alias ack='sift'
 
 PS1='[\u@\h \W]\$ '
+
+# added by travis gem
+[ -f /home/u/.travis/travis.sh ] && source /home/u/.travis/travis.sh
+source /usr/share/nvm/init-nvm.sh
