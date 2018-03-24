@@ -39,7 +39,7 @@ passwd u
 
 # Give wheel users sudo permissions.
 echo "Giving wheel users sudo permissions."
-sar -i "[\n]#(%wheel ALL=[(]ALL[)] ALL[\n])" "\n\${1}" /etc/sudoers
+sar -i "[\n]# (%wheel ALL=[(]ALL[)] ALL[\n])" "\n\${1}" /etc/sudoers
 
 # Update /etc/mkinitcpio.conf.
 #
