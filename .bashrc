@@ -39,7 +39,3 @@ alias xout='xclip -out'
 alias ack='sift'
 
 PS1='[\u@\h \W]\$ '
-
-# added by travis gem
-[ -f /home/u/.travis/travis.sh ] && source /home/u/.travis/travis.sh
-source /usr/share/nvm/init-nvm.sh
