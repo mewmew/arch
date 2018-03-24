@@ -11,7 +11,6 @@ sudo pacman -Sy \
 	geany \
 	git \
 	gmrun \
-	grc \
 	net-tools \
 	openbox \
 	openbsd-netcat \
@@ -30,6 +29,7 @@ sudo pacman -Sy \
 	zip \
 
 packer -S \
+	grc \
 	lwt-git \
 	spacefm \
 	sublime-text-dev \
