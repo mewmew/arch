@@ -33,7 +33,6 @@ sudo pacman -Sy \
 	scrot \
 	slock \
 	speedcrunch \
-	srm \
 	texlive-most \
 	thunderbird \
 	tiled \
@@ -47,5 +46,6 @@ sudo pacman -Sy \
 packer -S \
 	cv-git \
 	duff \
+	srm \
 	wxhexeditor-git \
 	youtube-dl-git \
