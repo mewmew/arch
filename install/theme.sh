@@ -17,4 +17,4 @@ wget -O /tmp/local.conf https://gist.githubusercontent.com/cryzed/4f64bb79e80d61
 sudo mv /tmp/local.conf /etc/fonts/local.conf
 
 packer -S \
-	packer -S fonts-meta-extended-lt \
+	fonts-meta-extended-lt \
