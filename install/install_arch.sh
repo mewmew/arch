@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Choose disk to install on.
+fdisk -l | grep "Disk /dev"
+echo ""
+echo "Please choose disk to install on (e.g. sda)."
+read DISK
+
 # Create partions with MBR partition table.
 #
 #    o           - new empty DOS partition table
@@ -8,16 +14,16 @@
 #    n p y       - new partition 100% /
 #    w           - write changes and exit
 echo "Partitioning disk."
-echo -e "o\nn\np\n\n\n+250M\ny\na\n1\nn\np\n\n\n\ny\nw\n" | fdisk /dev/sda
+echo -e "o\nn\np\n\n\n+250M\ny\na\n1\nn\np\n\n\n\ny\nw\n" | fdisk /dev/${DISK}
 
 # Format partitions.
 echo "Formatting partitions."
-mkfs.ext2 /dev/sda1
+mkfs.ext2 /dev/${DISK}1
 
 # Create encrypted partitions.
 echo "Creating encrypted partitions."
-cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/sda2
-cryptsetup luksOpen /dev/sda2 luks
+cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/${DISK}2
+cryptsetup luksOpen /dev/${DISK}2 luks
 pvcreate /dev/mapper/luks
 vgcreate vg0 /dev/mapper/luks
 lvcreate --size 8G vg0 --name swap
@@ -30,7 +36,7 @@ echo "Mounting filesystems."
 mount /dev/mapper/vg0-root /mnt
 swapon /dev/mapper/vg0-swap
 mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
+mount /dev/${DISK}1 /mnt/boot
 
 # Install packages.
 echo "Installing packages."

@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Choose disk to install on.
+fdisk -l | grep "Disk /dev"
+echo ""
+echo "Please choose disk to install on (e.g. sda)."
+read DISK
+
 # Install sar.
 echo "Installing sar."
 go get github.com/mewkiz/cmd/sar
@@ -53,10 +59,10 @@ sar -i "([\n]HOOKS=[(][^\n]*block) filesystems" "\${1} encrypt lvm2 filesystems"
 mkinitcpio -p linux
 
 # Install grub.
-grub-install --recheck /dev/sda
+grub-install --recheck /dev/${DISK}
 
 # Update /etc/default/grub.
 #
 # * Add 'cryptdevice=/dev/sdX3:luks:allow-discards' to GRUB_CMDLINE_LINUX.
-sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/sda2:luks:allow-discards\"' /etc/default/grub
+sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/${DISK}2:luks:allow-discards\"' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
