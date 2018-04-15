@@ -22,9 +22,14 @@ echo "Configuring system clock."
 ln -s /usr/share/zoneinfo/Europe/Stockholm /etc/localtime
 hwclock --systohc --utc
 
+# Specify hostname.
+echo ""
+echo "Please specify hostname."
+read HOSTNAME
+
 # Set hostname.
 echo "Setting hostname."
-echo x61s > /etc/hostname
+echo ${HOSTNAME} > /etc/hostname
 
 # Update locale
 echo "Updating locale."
@@ -38,10 +43,15 @@ locale-gen
 echo "Setting root password."
 passwd
 
+# Specify username.
+echo ""
+echo "Please specify username."
+read USERNAME
+
 # Add user.
 echo "Adding user."
-useradd -m -g users -G wheel,storage,power,audio u
-passwd u
+useradd -m -g users -G wheel,storage,power,audio ${USERNAME}
+passwd ${USERNAME}
 
 # Give wheel users sudo permissions.
 echo "Giving wheel users sudo permissions."
