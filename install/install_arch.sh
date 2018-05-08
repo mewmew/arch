@@ -3,7 +3,7 @@
 # Choose disk to install on.
 fdisk -l | grep "Disk /dev"
 echo ""
-echo "Please choose disk to install on (e.g. sda)."
+echo "Please choose disk to partition (e.g. sdb)."
 read DISK
 
 # Create partions with MBR partition table.
@@ -40,7 +40,7 @@ mount /dev/${DISK}1 /mnt/boot
 
 # Install packages.
 echo "Installing packages."
-pacstrap /mnt base base-devel grub nano wpa_supplicant dialog netctl git wget go
+pacstrap /mnt base base-devel grub nano wpa_supplicant dialog netctl net-tools git wget go
 
 # Generate /etc/fstab.
 echo "Generating /etc/fstab"
@@ -54,7 +54,7 @@ cp install_arch_chroot.sh /mnt/root
 
 # Enter the new system.
 echo "Entering chroot."
-arch-chroot /mnt /bin/bash -c /root/install_arch_chroot.sh
+arch-chroot /mnt /bin/bash -c "/root/install_arch_chroot.sh "
 
 rm /mnt/root/install_arch_chroot.sh
 

@@ -3,7 +3,7 @@
 # Choose disk to install on.
 fdisk -l | grep "Disk /dev"
 echo ""
-echo "Please choose disk to install on (e.g. sda)."
+echo "Please choose disk to install on (e.g. sdb)."
 read DISK
 
 # Install sar.
@@ -74,5 +74,5 @@ grub-install --recheck /dev/${DISK}
 # Update /etc/default/grub.
 #
 # * Add 'cryptdevice=/dev/sdX3:luks:allow-discards' to GRUB_CMDLINE_LINUX.
-sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/${DISK}2:luks:allow-discards\"' /etc/default/grub
+sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/sda2:luks:allow-discards\"' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
