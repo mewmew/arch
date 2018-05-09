@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Install packer
 sudo pacman -Sy wget
 mkdir /tmp/foo
 cd /tmp/foo

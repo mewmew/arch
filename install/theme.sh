@@ -1,15 +1,5 @@
 #!/bin/bash
 
-sudo pacman -Sy \
-	adobe-source-code-pro-fonts \
-	elementary-icon-theme \
-	gtk-engine-murrine \
-	lxappearance \
-	ttf-hack \
-
-packer -S \
-	vertex-themes-git \
-
 # infinality bundle replacement.
 sudo ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 sudo ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
