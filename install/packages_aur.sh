@@ -36,4 +36,4 @@ packer -S \
 
 # Video
 packer -S \
-	python-subliminal
+	subliminal \
