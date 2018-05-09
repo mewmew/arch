@@ -27,10 +27,12 @@ packer -S \
 	blockify \
 	spotify \
 
-# Video
-packer -S \
-	python-subliminal
-
 # Theme
 packer -S \
 	vertex-themes-git \
+
+# Put subliminal last since its AUR package often fails to build.
+
+# Video
+packer -S \
+	python-subliminal
