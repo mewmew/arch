@@ -24,9 +24,9 @@ packer -S \
 # Music
 packer -S \
 	8play \
-	blockify \
 	libcurl-gnutls \
 	spotify \
+	blockify \
 
 # Theme
 packer -S \
