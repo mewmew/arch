@@ -152,6 +152,7 @@ sudo pacman -Sy \
 
 # Gaming
 sudo pacman -Sy \
+	mednafen \
 	tiled \
 
 # Security
