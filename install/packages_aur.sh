@@ -21,6 +21,10 @@ packer -S \
 	edb-debugger \
 	wxhexeditor-git \
 
+# Browser
+packer -S \
+	firefox-esr \
+
 # Music
 packer -S \
 	8play \
