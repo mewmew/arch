@@ -23,7 +23,7 @@ packer -S \
 
 # Browser
 packer -S \
-	firefox-esr \
+	firefox-esr52 \
 
 # Music
 packer -S \
