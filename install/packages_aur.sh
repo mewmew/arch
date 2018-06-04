@@ -22,8 +22,8 @@ packer -S \
 	wxhexeditor-git \
 
 # Browser
-packer -S \
-	firefox-esr52 \
+FIREFOX_ESR_BIN_PREFER_OLDER=yes packer -S \
+	firefox-esr-bin \
 
 # Music
 packer -S \
