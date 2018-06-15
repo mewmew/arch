@@ -147,6 +147,7 @@ sudo pacman -Sy \
 
 # Virtualization
 sudo pacman -Sy \
+	linux-headers \
 	qemu \
 	virtualbox \
 
