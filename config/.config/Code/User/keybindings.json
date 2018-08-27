@@ -1,0 +1,33 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+{
+   "key": "ctrl+up",
+   "command": "spaceBlockJumper.moveUp",
+   "when": "textInputFocus"
+},
+{
+   "key": "ctrl+down",
+   "command": "spaceBlockJumper.moveDown",
+   "when": "textInputFocus"
+},
+{
+   "key": "ctrl+shift+up",
+   "command": "spaceBlockJumper.selectUp",
+   "when": "textInputFocus"
+},
+{
+   "key": "ctrl+shift+down",
+   "command": "spaceBlockJumper.selectDown",
+   "when": "textInputFocus"
+},
+{
+   "key": "alt+up",
+   "command": "scrollLineUp",
+   "when": "textInputFocus"
+},
+{
+   "key": "alt+down",
+   "command": "scrollLineDown",
+   "when": "textInputFocus"
+}
+]
