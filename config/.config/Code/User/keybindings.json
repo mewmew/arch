@@ -2,22 +2,22 @@
 [
 {
    "key": "ctrl+up",
-   "command": "spaceBlockJumper.moveUp",
+   "command": "block-travel.jumpUp",
    "when": "textInputFocus"
 },
 {
    "key": "ctrl+down",
-   "command": "spaceBlockJumper.moveDown",
+   "command": "block-travel.jumpDown",
    "when": "textInputFocus"
 },
 {
    "key": "ctrl+shift+up",
-   "command": "spaceBlockJumper.selectUp",
+   "command": "block-travel.selectUp",
    "when": "textInputFocus"
 },
 {
    "key": "ctrl+shift+down",
-   "command": "spaceBlockJumper.selectDown",
+   "command": "block-travel.selectDown",
    "when": "textInputFocus"
 },
 {
