@@ -1,0 +1,6 @@
+packer -S evdi # maybz evdi-git
+packer -S displaylink
+sudo systemctl enable displaylink.service
+sudo systemctl start displaylink.service
+sudo modprobe evdi
+xrandr --listproviders
