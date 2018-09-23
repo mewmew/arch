@@ -79,6 +79,7 @@ echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable
 
 # Editor
 sudo pacman -Sy \
+	code \
 	geany \
 	sublime-text \
 
