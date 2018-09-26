@@ -1,33 +1,47 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-{
-   "key": "ctrl+up",
-   "command": "block-travel.jumpUp",
-   "when": "textInputFocus"
-},
-{
-   "key": "ctrl+down",
-   "command": "block-travel.jumpDown",
-   "when": "textInputFocus"
-},
-{
-   "key": "ctrl+shift+up",
-   "command": "block-travel.selectUp",
-   "when": "textInputFocus"
-},
-{
-   "key": "ctrl+shift+down",
-   "command": "block-travel.selectDown",
-   "when": "textInputFocus"
-},
-{
-   "key": "alt+up",
-   "command": "scrollLineUp",
-   "when": "textInputFocus"
-},
-{
-   "key": "alt+down",
-   "command": "scrollLineDown",
-   "when": "textInputFocus"
-}
+   {
+      "key": "ctrl+up",
+      "command": "block-travel.jumpUp",
+      "when": "textInputFocus"
+   },
+   {
+      "key": "ctrl+down",
+      "command": "block-travel.jumpDown",
+      "when": "textInputFocus"
+   },
+   {
+      "key": "ctrl+shift+up",
+      "command": "block-travel.selectUp",
+      "when": "textInputFocus"
+   },
+   {
+      "key": "ctrl+shift+down",
+      "command": "block-travel.selectDown",
+      "when": "textInputFocus"
+   },
+   {
+      "key": "alt+up",
+      "command": "scrollLineUp",
+      "when": "textInputFocus"
+   },
+   {
+      "key": "alt+down",
+      "command": "scrollLineDown",
+      "when": "textInputFocus"
+   },
+   {
+      "key": "alt+`",
+      "command": "workbench.action.terminal.focus",
+      "when": "editorTextFocus",
+   },
+   {
+      "key": "alt+`",
+      "command": "workbench.action.focusActiveEditorGroup",
+      "when": "terminalFocus"
+   },
+   {
+      "key": "ctrl+`",
+      "command": "terminalHere.create",
+   },
 ]
