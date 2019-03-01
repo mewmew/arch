@@ -36,6 +36,10 @@ packer -S \
 packer -S \
 	vertex-themes-git \
 
+# Debug
+packer -S \
+	rr-multilib \
+
 # Put subliminal last since its AUR package often fails to build.
 
 # Video
