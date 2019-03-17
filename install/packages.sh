@@ -180,6 +180,10 @@ sudo pacman -Sy \
 	mpv \
 	vlc \
 
+# Reversing
+sudo pacman -Sy \
+	binwalk \
+
 # Cleanup
 sudo pacman -Sy \
 	gdmap \
