@@ -5,12 +5,14 @@ set AUTOJUMP_IGNORE_CASE = 1
 set -x EDITOR 'geany -i'
 set -x PATH /home/u/goget/bin $PATH
 set -x PATH /home/u/Desktop/go/bin $PATH
-set -x PATH /home/u/go/bin $PATH
-set -x PATH /home/u/.gem/ruby/2.4.0/bin $PATH
+set -x PATH /home/u/go1.13/bin $PATH
+set -x PATH /home/u/.gem/ruby/2.5.0/bin $PATH
+set -x PATH /home/u/.local/bin $PATH
 set -x PATH /home/u/Desktop/MiniZincIDE-2.1.5-bundle-linux-x86_64 $PATH
 set -x GOPATH /home/u/goget:/home/u/Desktop/go
 set -x _JAVA_OPTIONS '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 set -x FREETYPE_PROPERTIES 'truetype:interpreter-version=40'
+set -x TM_DIR '/home/u/goget/src/github.com/inspirer/textmapper'
 
 function fish_user_key_bindings
     # Alt+l : print the file contents of the current folder.
@@ -34,8 +36,14 @@ alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
 alias ...... 'cd ../../../../..'
 
+# Binary grep.
+alias bgrep='grep -obUaP'
+
 # ref: http://www.projectatomic.io/blog/2015/08/why-we-dont-let-non-root-users-run-docker-in-centos-fedora-or-rhel/
 alias docker='sudo /usr/bin/docker'
+
+# Textmapper.
+#alias textmapper='(TM_DIR)/tm-tool/libs/textmapper.sh'
 
 # Calendar start on monday.
 alias cal='cal -m'
@@ -49,9 +57,8 @@ alias df='grc df'
 # Colored grep.
 alias grep='grep --color=auto'
 
-# Colored ls, (-F) append '/' to directories, (-X) sort alphabetically, (-v)
-# natural sort of numbers.
-alias ls='ls --color=auto -F -X -v'
+# Colored ls, (-F) append '/' to directories, (-v) # natural sort of numbers.
+alias ls='lsd --color=auto -F -X -v'
 
 # stdin to clipboard.
 alias xin='xclip -in -selection clip'

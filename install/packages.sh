@@ -55,6 +55,7 @@ sudo pacman -Sy \
 	ccd2iso \
 	cpio \
 	fish \
+	lsd \
 	mdf2iso \
 	nrg2iso \
 	optipng \
