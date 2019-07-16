@@ -33,7 +33,7 @@ alias cal='cal -m'
 alias grep='grep --color=auto'
 
 # Colored ls, (-F) append '/' to directories, (-v) natural sort of numbers.
-alias ls='lsd --color=auto -F -v'
+alias ls='lsd --color=auto -F'
 
 # stdin to clipboard.
 alias xin='xclip -in -selection clip'
