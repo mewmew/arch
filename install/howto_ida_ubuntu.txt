@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo apt-get install lsb
+sudo apt-get install libglib2.0-0:i386
+sudo apt-get install libxext6:i386
+sudo apt-get install qt5-style-plugins:i386

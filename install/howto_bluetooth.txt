@@ -1,0 +1,14 @@
+$ sudo modprobe bluetooth
+$ sudo systemctl start bluetooth
+# Running `pavucontrol` is needed to add the controller for the
+# bluetooth sound.
+$ pavucontrol
+$ bluetoothctl
+[bluetooth]# power on
+[bluetooth]# agent on
+[bluetooth]# default agent
+[bluetooth]# scan on
+[NEW] Device 00:1B:66:84:0B:60 MOMENTUM M2 AEBT
+[bluetooth]# pair 00:1B:66:84:0B:60
+[bluetooth]# connect 00:1B:66:84:0B:60
+
