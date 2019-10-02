@@ -85,7 +85,7 @@ input $keyboard xkb_layout us-swedish-umlaut
 #gaps inner 2
 #gaps outer 3
 
-for_window [title=".*mpv$"] floating enable
+#for_window [title=".*mpv$"] floating enable
 #for_window [title=".*lwt$"] floating enable
 #for_window [title=".*$"] floating enable
 
