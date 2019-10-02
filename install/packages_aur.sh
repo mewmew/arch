@@ -34,6 +34,7 @@ packer -S \
 
 # Theme
 packer -S \
+	redshift-wlr-gamma-control-git \
 	vertex-themes-git \
 
 # Debug

@@ -11,6 +11,12 @@ sudo pacman -Sy \
 	xorg-xinit \
 	xterm \
 
+# Wayland
+sudo pacman -Sy \
+	sway \
+	swayidle \
+	swaylock \
+
 # Theme
 sudo pacman -Sy \
 	adobe-source-code-pro-fonts \
@@ -30,6 +36,7 @@ sudo pacman -Sy \
 	speedcrunch \
 	tint2 \
 	xcompmgr \
+	pcmanfm \
 
 # Audio
 sudo pacman -S \
@@ -134,6 +141,7 @@ sudo pacman -Sy \
 # Network
 sudo pacman -Sy \
 	dnsmasq \
+	filezilla \
 	hostapd \
 	macchanger \
 	net-tools \
@@ -205,4 +213,16 @@ sudo pacman -Sy \
 # Security
 sudo pacman -Sy \
 	aircrack-ng \
+	hydra \
 	nmap \
+
+# blackarch
+#sudo pacman -Sy \
+#	arp-scan \
+#	bypass-firewall-dns-history \
+#	creak \
+#	dnsfilexfer \
+#	dtp-spoof \
+#	exabgp \
+#	hyenae \
+#	hyenae \

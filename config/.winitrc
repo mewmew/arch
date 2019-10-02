@@ -1,0 +1,4 @@
+#export GDK_BACKEND=wayland
+
+redshift -l 59.3:17.7 -m randr -v -g 0.8 -t 5700:3600 &
+sway
