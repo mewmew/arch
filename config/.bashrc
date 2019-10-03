@@ -6,8 +6,9 @@ export EDITOR='geany -i'
 export PATH=${HOME}/goget/bin:$PATH
 export PATH=${HOME}/Desktop/go/bin:$PATH
 export PATH=${HOME}/go1.13/bin:$PATH
-export PATH=${HOME}/.gem/ruby/2.5.0/bin:$PATH
+export PATH=${HOME}/.gem/ruby/2.6.0/bin:$PATH
 export PATH=${HOME}/.local/bin:$PATH
+export PATH=${HOME}/.cargo/bin:$PATH
 export PATH=${HOME}/Desktop/MiniZincIDE-2.1.5-bundle-linux-x86_64:$PATH
 export GOPATH=${HOME}/goget:${HOME}/Desktop/go
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
@@ -25,6 +26,9 @@ alias docker='sudo /usr/bin/docker'
 
 # Textmapper.
 alias textmapper='${TM_DIR}/tm-tool/libs/textmapper.sh'
+
+# Start Wayland (muscle memory)
+alias startx='startw'
 
 # Calendar start on monday.
 alias cal='cal -m'
