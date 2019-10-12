@@ -106,6 +106,7 @@ sudo pacman -Sy \
 	bless \
 	clang \
 	cloc \
+	cppcheck \
 	gdb \
 	ghc \
 	git \
