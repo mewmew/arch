@@ -101,6 +101,7 @@ sudo pacman -Sy \
 	thunderbird \
 
 # Develop
+# * clang also include clang-tidy and clang-query
 sudo pacman -Sy \
 	base-devel \
 	bless \
