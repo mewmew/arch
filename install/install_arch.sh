@@ -42,7 +42,7 @@ mount /dev/${DISK}${PART_PREFIX}1 /mnt/boot
 
 # Install packages.
 echo "Installing packages."
-pacstrap /mnt base base-devel linux linux-firmware grub nano wpa_supplicant dialog netctl net-tools git wget go
+pacstrap /mnt base base-devel linux linux-firmware lvm2 grub nano wpa_supplicant dialog netctl net-tools git wget go
 
 # Generate /etc/fstab.
 echo "Generating /etc/fstab"
