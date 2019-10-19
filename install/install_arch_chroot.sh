@@ -3,7 +3,7 @@
 # Choose disk to install on.
 fdisk -l | grep "Disk /dev"
 echo ""
-echo "Please choose disk to install on (e.g. sdb)."
+echo "Please choose disk to install on (e.g. sda or nvme0n1)."
 read DISK
 
 # Install sar.

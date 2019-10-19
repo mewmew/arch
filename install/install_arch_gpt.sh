@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# Disk to install on.
-DISK=nvme0n1
+# Choose disk to install on.
+fdisk -l | grep "Disk /dev"
+echo ""
+echo "Please choose disk to install on (e.g. sda or nvme0n1)."
+read DISK
+echo "Please choose a partition prefix (e.g. 'p' (for e.g. nvme0n1p1) or blank (for e.g. sda1))."
+read PART_PREFIX
 
 # Create partions with MBR partition table.
 #
@@ -15,13 +20,13 @@ echo -e "g\nn\n\n\n+100M\ny\nt\n1\nn\n\n\n+250M\nn\n\n\n\ny\nw\n" | fdisk /dev/$
 
 # Format partitions.
 echo "Formatting partitions."
-mkfs.vfat -F32 /dev/${DISK}p1
-mkfs.ext2 /dev/${DISK}p2
+mkfs.vfat -F32 /dev/${DISK}${PART_PREFIX}1
+mkfs.ext2 /dev/${DISK}${PART_PREFIX}2
 
 # Create encrypted partitions.
 echo "Creating encrypted partitions."
-cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/${DISK}p3
-cryptsetup luksOpen /dev/${DISK}p3 luks
+cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/${DISK}${PART_PREFIX}3
+cryptsetup luksOpen /dev/${DISK}${PART_PREFIX}3 luks
 pvcreate /dev/mapper/luks
 vgcreate vg0 /dev/mapper/luks
 lvcreate --size 8G vg0 --name swap
@@ -34,9 +39,9 @@ echo "Mounting filesystems."
 mount /dev/mapper/vg0-root /mnt
 swapon /dev/mapper/vg0-swap
 mkdir /mnt/boot
-mount /dev/${DISK}p2 /mnt/boot
+mount /dev/${DISK}${PART_PREFIX}2 /mnt/boot
 mkdir /mnt/boot/efi
-mount /dev/${DISK}p1 /mnt/boot/efi
+mount /dev/${DISK}${PART_PREFIX}1 /mnt/boot/efi
 
 # Install packages.
 echo "Installing packages."

@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Disk to install on.
-DISK=nvme0n1
+# Choose disk to install on.
+fdisk -l | grep "Disk /dev"
+echo ""
+echo "Please choose disk to install on (e.g. sda or nvme0n1)."
+read DISK
 
 # Install sar.
 echo "Installing sar."
