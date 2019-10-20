@@ -76,5 +76,5 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub 
 # Update /etc/default/grub.
 #
 # * Add 'cryptdevice=/dev/sdX3:luks:allow-discards' to GRUB_CMDLINE_LINUX.
-sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/${DISK}${PART_PREFIX}3:luks:allow-discards\"' /etc/default/grub
+sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/'${DISK}${PART_PREFIX}'3:luks:allow-discards\"' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
