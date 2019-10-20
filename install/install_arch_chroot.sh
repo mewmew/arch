@@ -1,5 +1,19 @@
 #!/bin/bash
 
+# Choose whether to use EFI boot loader.
+echo "Use EFI for boot loader ('y' or 'n')?"
+read USE_EFI
+if [ ${USE_EFI} == "y" ]; then
+	echo "Using EFI boot loader (GPT)."
+else
+	if [ ${USE_EFI} == "n" ]; then
+		echo "Using old school boot loader (MBR)."
+	else
+		echo "Invalid choice '${USE_EFI}'. Please answer 'y' or 'n'."
+		exit 1
+	fi
+fi
+
 # Choose disk to install on.
 fdisk -l | grep "Disk /dev"
 echo ""
@@ -71,10 +85,18 @@ sar -i "([\n]HOOKS=[(][^\n]*block) filesystems" "\${1} encrypt lvm2 filesystems"
 mkinitcpio -p linux
 
 # Install grub.
-grub-install --recheck /dev/${DISK}
+if [ ${USE_EFI} == "y" ]; then
+	grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub --recheck /dev/${DISK}
+else
+	grub-install --recheck /dev/${DISK}
+fi
 
 # Update /etc/default/grub.
 #
 # * Add 'cryptdevice=/dev/sdX3:luks:allow-discards' to GRUB_CMDLINE_LINUX.
-sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/'${DISK}${PART_PREFIX}'2:luks:allow-discards\"' /etc/default/grub
+if [ ${USE_EFI} == "y" ]; then
+	sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/'${DISK}${PART_PREFIX}'3:luks:allow-discards\"' /etc/default/grub
+else
+	sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '\nGRUB_CMDLINE_LINUX=\"cryptdevice=/dev/'${DISK}${PART_PREFIX}'2:luks:allow-discards\"' /etc/default/grub
+fi
 grub-mkconfig -o /boot/grub/grub.cfg
