@@ -4,45 +4,34 @@
 ./packer.sh
 
 # Desktop
-packer -S \
-	lwt-git \
-	spacefm-gtk2 \
+AUR_PKGS="lwt-git"
+AUR_PKGS+=" spacefm-gtk2"
 
 # Shell
-packer -S \
-	cv-git \
-	duff \
-	grc \
-	srm \
-	youtube-dl-git \
+AUR_PKGS+=" duff"
+AUR_PKGS+=" grc"
+AUR_PKGS+=" srm"
+AUR_PKGS+=" youtube-dl-git"
 
 # Develop
-packer -S \
-	edb-debugger \
-	wxhexeditor-git \
-
-# Browser
-FIREFOX_ESR_BIN_PREFER_OLDER=yes packer -S \
-	firefox-esr-bin \
+AUR_PKGS=" edb-debugger"
 
 # Music
-packer -S \
-	8play \
-	libcurl-gnutls \
-	spotify \
-	blockify \
+AUR_PKGS+=" libcurl-gnutls" # spotify dep
+AUR_PKGS+=" spotify"
 
 # Theme
-packer -S \
-	redshift-wlr-gamma-control-git \
-	vertex-themes-git \
+# * Redshift for Wayland
+AUR_PKGS+=" redshift-wlr-gamma-control-git"
+# * Vertex theme for GTK
+AUR_PKGS+=" vertex-themes-git"
 
 # Debug
-packer -S \
-	rr-multilib \
+AUR_PKGS+=" rr-multilib"
 
 # Put subliminal last since its AUR package often fails to build.
 
 # Video
-packer -S \
-	subliminal \
+AUR_PKGS+=" subliminal"
+
+packer -S --noedit ${AUR_PKGS}

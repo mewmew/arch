@@ -1,82 +1,198 @@
 #!/bin/bash
 
 # Xorg
-sudo pacman -Sy \
-	mesa-libgl \
-	xclip \
-	xf86-video-intel \
-	xorg-apps \
-	xorg-server \
-	xorg-xev \
-	xorg-xinit \
-	xterm \
+PKGS="mesa-libgl"
+PKGS+=" xclip"
+PKGS+=" xf86-video-intel"
+PKGS+=" xorg-apps"
+PKGS+=" xorg-server"
+PKGS+=" xorg-xev"
+PKGS+=" xorg-xinit"
+PKGS+=" xterm"
 
 # Wayland
-sudo pacman -Sy \
-	sway \
-	swayidle \
-	swaylock \
+PKGS+=" sway"
+PKGS+=" swayidle"
+PKGS+=" swaylock"
 
 # Theme
-sudo pacman -Sy \
-	adobe-source-code-pro-fonts \
-	elementary-icon-theme \
-	feh \
-	gtk-engine-murrine \
-	lxappearance \
-	redshift \
-	slock \
-	ttf-hack \
+PKGS+=" adobe-source-code-pro-fonts"
+PKGS+=" elementary-icon-theme"
+PKGS+=" feh"
+PKGS+=" gtk-engine-murrine"
+PKGS+=" lxappearance"
+# * Redshift for X11.
+#PKGS+=" redshift"
+PKGS+=" slock"
+PKGS+=" ttf-hack"
 
 # Desktop
-sudo pacman -Sy \
-	gmrun \
-	openbox \
-	scrot \
-	speedcrunch \
-	tint2 \
-	xcompmgr \
+PKGS+=" gmrun"
+PKGS+=" openbox"
+PKGS+=" scrot"
+PKGS+=" speedcrunch"
+PKGS+=" tint2"
+PKGS+=" xcompmgr"
 
 # Audio
-sudo pacman -S \
-	alsa-lib \
-	alsa-utils \
-	bluez-firmware \
-	bluez-firmware \
-	bluez-libs \
-	bluez-utils \
-	pavucontrol \
-	pulseaudio \
-	pulseaudio-alsa \
-	pulseaudio-bluetooth \
-
-sudo gpasswd -a ${USER} audio
+PKGS+=" alsa-lib"
+PKGS+=" alsa-utils"
+PKGS+=" bluez-firmware"
+PKGS+=" bluez-firmware"
+PKGS+=" bluez-libs"
+PKGS+=" bluez-utils"
+PKGS+=" pavucontrol"
+PKGS+=" pulseaudio"
+PKGS+=" pulseaudio-alsa"
+PKGS+=" pulseaudio-bluetooth"
 
 # Shell
-sudo pacman -Sy \
-	atool \
-	autojump \
-	bash-completion \
-	bchunk \
-	ccd2iso \
-	cpio \
-	fish \
-	fzf \
-	lsd \
-	mdf2iso \
-	nrg2iso \
-	optipng \
-	p7zip \
-	rlwrap \
-	rsync \
-	time \
-	tree \
-	udisks2 \
-	unrar \
-	unzip \
-	zip \
+PKGS+=" atool"
+PKGS+=" autojump"
+PKGS+=" bash-completion"
+PKGS+=" bchunk"
+PKGS+=" ccd2iso"
+PKGS+=" cpio"
+PKGS+=" fish"
+PKGS+=" fzf"
+PKGS+=" lsd"
+PKGS+=" mdf2iso"
+PKGS+=" nrg2iso"
+PKGS+=" optipng"
+PKGS+=" p7zip"
+PKGS+=" rlwrap"
+PKGS+=" rsync"
+PKGS+=" time"
+PKGS+=" tree"
+PKGS+=" udisks2"
+PKGS+=" unrar"
+PKGS+=" unzip"
+PKGS+=" zip"
 
-sudo ln -s /usr/share/autojump/autojump.fish /etc/profile.d/autojump.fish
+# Editor
+PKGS+=" code"
+PKGS+=" geany"
+PKGS+=" sublime-text"
+
+# Browser
+PKGS+=" chromium"
+PKGS+=" firefox"
+
+# E-mail
+PKGS+=" thunderbird"
+
+# Develop
+PKGS+=" base-devel"
+PKGS+=" bless"
+# * clang also include clang-tidy and clang-query
+PKGS+=" clang"
+PKGS+=" cloc"
+PKGS+=" cppcheck"
+PKGS+=" gdb"
+PKGS+=" ghc"
+PKGS+=" git"
+PKGS+=" graphviz"
+PKGS+=" llvm"
+PKGS+=" lsof"
+PKGS+=" ltrace"
+PKGS+=" mercurial"
+PKGS+=" nasm"
+PKGS+=" python"
+PKGS+=" python-pip"
+PKGS+=" ruby"
+PKGS+=" strace"
+PKGS+=" svn"
+PKGS+=" vbindiff"
+
+# Admin
+PKGS+=" dosfstools"
+PKGS+=" gparted"
+PKGS+=" hardinfo"
+PKGS+=" lxrandr"
+PKGS+=" lxtask"
+PKGS+=" powertop"
+PKGS+=" screen"
+
+# Office
+PKGS+=" evince"
+PKGS+=" libreoffice-still"
+PKGS+=" texlive-most"
+
+# Network
+PKGS+=" dnsmasq"
+PKGS+=" filezilla"
+PKGS+=" hostapd"
+PKGS+=" macchanger"
+PKGS+=" net-tools"
+PKGS+=" openbsd-netcat"
+PKGS+=" openssh"
+PKGS+=" openvpn"
+PKGS+=" traceroute"
+PKGS+=" transmission-gtk"
+PKGS+=" wget"
+PKGS+=" wireless_tools"
+PKGS+=" wireshark-gtk"
+PKGS+=" wpa_supplicant"
+
+# Virtualization
+PKGS+=" linux-headers"
+PKGS+=" qemu"
+PKGS+=" virtualbox"
+
+# Gaming
+PKGS+=" mednafen"
+PKGS+=" tiled"
+
+# Security
+PKGS+=" veracrypt"
+
+# Graphics
+PKGS+=" blender"
+PKGS+=" darktable"
+PKGS+=" gimp"
+PKGS+=" imagemagick"
+PKGS+=" viewnior"
+
+# Music
+PKGS+=" deadbeef"
+
+# Video
+PKGS+=" libva-intel-driver"
+PKGS+=" libvdpau-va-gl"
+PKGS+=" mpv"
+PKGS+=" vlc"
+
+# Reversing
+PKGS+=" binwalk"
+
+# Cleanup
+PKGS+=" gdmap"
+PKGS+=" rmlint"
+
+# Printer
+PKGS+=" cups"
+PKGS+=" gtk3-print-backends"
+PKGS+=" hplip"
+PKGS+=" python2-gnomekeyring"
+PKGS+=" system-config-printer"
+
+# Scanner
+PKGS+=" sane"
+
+# Security
+PKGS+=" aircrack-ng"
+PKGS+=" hydra"
+PKGS+=" nmap"
+
+# blackarch
+#PKGS+=" arp-scan"
+#PKGS+=" bypass-firewall-dns-history"
+#PKGS+=" creak"
+#PKGS+=" dnsfilexfer"
+#PKGS+=" dtp-spoof"
+#PKGS+=" exabgp"
+#PKGS+=" hyenae"
+#PKGS+=" hyenae"
 
 # Add sublime GPG key and channel.
 wget -O /tmp/sublimehq-pub.gpg https://download.sublimetext.com/sublimehq-pub.gpg
@@ -85,146 +201,12 @@ sudo pacman-key --lsign-key 8A8F901A
 rm /tmp/sublimehq-pub.gpg
 echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 
-# Editor
-sudo pacman -Sy \
-	code \
-	geany \
-	sublime-text \
+# Install packages.
+sudo pacman -Sy ${PKGS}
 
-# Browser
-sudo pacman -Sy \
-	chromium \
-	firefox \
+# Enable autojump in fish.
+sudo ln -s /usr/share/autojump/autojump.fish /etc/profile.d/autojump.fish
 
-# E-mail
-sudo pacman -Sy \
-	thunderbird \
-
-# Develop
-# * clang also include clang-tidy and clang-query
-sudo pacman -Sy \
-	base-devel \
-	bless \
-	clang \
-	cloc \
-	cppcheck \
-	gdb \
-	ghc \
-	git \
-	graphviz \
-	llvm \
-	lsof \
-	ltrace \
-	mercurial \
-	nasm \
-	python \
-	python-pip \
-	ruby \
-	strace \
-	svn \
-	vbindiff \
-
-# Admin
-sudo pacman -Sy \
-	dosfstools \
-	gparted \
-	hardinfo \
-	lxrandr \
-	lxtask \
-	powertop \
-	screen \
-
-# Office
-sudo pacman -Sy \
-	evince \
-	libreoffice-still \
-	texlive-most \
-
-# Network
-sudo pacman -Sy \
-	dnsmasq \
-	filezilla \
-	hostapd \
-	macchanger \
-	net-tools \
-	openbsd-netcat \
-	openssh \
-	openvpn \
-	traceroute \
-	transmission-gtk \
-	wget \
-	wireless_tools \
-	wireshark-gtk \
-	wpa_supplicant \
-
-# Virtualization
-sudo pacman -Sy \
-	linux-headers \
-	qemu \
-	virtualbox \
-
-# Gaming
-sudo pacman -Sy \
-	mednafen \
-	tiled \
-
-# Security
-sudo pacman -Sy \
-	veracrypt \
-
-# Graphics
-sudo pacman -Sy \
-	blender \
-	darktable \
-	gimp \
-	imagemagick \
-	viewnior \
-
-# Music
-sudo pacman -Sy \
-	deadbeef \
-
-# Video
-sudo pacman -Sy \
-	libva-intel-driver \
-	libvdpau-va-gl \
-	mpv \
-	vlc \
-
-# Reversing
-sudo pacman -Sy \
-	binwalk \
-
-# Cleanup
-sudo pacman -Sy \
-	gdmap \
-	rmlint \
-
-# Printer
-sudo pacman -Sy \
-	cups \
-	gtk3-print-backends \
-	hplip \
-	python2-gnomekeyring \
-	system-config-printer \
-
-# Scanner
-sudo pacman -Sy \
-	sane \
-
-# Security
-sudo pacman -Sy \
-	aircrack-ng \
-	hydra \
-	nmap \
-
-# blackarch
-#sudo pacman -Sy \
-#	arp-scan \
-#	bypass-firewall-dns-history \
-#	creak \
-#	dnsfilexfer \
-#	dtp-spoof \
-#	exabgp \
-#	hyenae \
-#	hyenae \
+# Add user to audio and wireshark groups.
+sudo gpasswd -a ${USER} audio
+sudo gpasswd -a ${USER} wireshark
