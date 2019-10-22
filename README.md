@@ -11,6 +11,8 @@ git clone https://github.com/mewmew/arch
 # Copy configuration files.
 cp -T -r arch/config/ ${HOME}/
 cp -r arch/bin ${HOME}/
+# Restart shell to load profile.
+/bin/bash
 # Install programs.
 ${HOME}/install/fresh_install.sh
 ```
