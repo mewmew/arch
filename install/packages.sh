@@ -36,7 +36,6 @@ sudo pacman -Sy \
 	speedcrunch \
 	tint2 \
 	xcompmgr \
-	pcmanfm \
 
 # Audio
 sudo pacman -S \

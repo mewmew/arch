@@ -97,7 +97,7 @@ input $keyboard xkb_layout us-swedish-umlaut
     bindsym $mod+Return exec $term
     bindsym $mod+t exec $term
     bindsym $mod+r exec gmrun
-    bindsym $mod+e exec pcmanfm
+    bindsym $mod+e exec spacefm
     bindsym $mod+g exec geany -i
 
     # Enable laptop screen.

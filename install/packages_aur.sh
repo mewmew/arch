@@ -6,7 +6,7 @@
 # Desktop
 packer -S \
 	lwt-git \
-	spacefm \
+	spacefm-gtk2 \
 
 # Shell
 packer -S \
