@@ -1,10 +1,52 @@
+# SpaceFM Session File
+
+[General]
+show_thumbnail=1
+big_icon_size=96
+
+[Interface]
+
 [MOD]
+main_terminal-s=lwt
+main_terminal-key=65473
+main_terminal-b=2
 tab_new_here-key=116
 tab_new_here-keymod=4
-panel1_show_devmon-key=100
-panel1_show_devmon-keymod=4
+go_back-key=65361
+go_back-keymod=8
+go_forward-key=65363
+go_forward-keymod=8
+go_up-key=65362
+go_up-keymod=8
+go_default-key=65360
+go_default-keymod=8
+editor-s=/usr/bin/subl %F
+task_show_manager-b=2
+panel1_book_fol-b=1
+panel1_font_file-s=Sans 14
+panel1_list_compact-b=2
 panel1_list_detailed-b=2
 panel1_list_icons-b=1
-panel1_list_compact-b=2
 panel1_list_large-b=1
-panel1_font_file-s=Sans 12
+panel1_show-b=1
+panel1_show-key=49
+panel1_show-keymod=4
+panel1_show-s=////home/u
+panel1_show-x=0
+panel1_show_book0-b=2
+panel1_show_book-b=2
+panel1_show_devmon0-b=2
+panel1_show_devmon-b=2
+panel1_show_hidden-key=104
+panel1_show_hidden-keymod=4
+panel1_show_sidebar0-b=2
+panel1_show_sidebar-b=2
+panel1_show_toolbox0-b=1
+panel1_show_toolbox-b=1
+panel1_slider_positions0-s=0
+panel1_slider_positions0-x=0
+panel1_slider_positions0-y=0
+panel1_sort_extra-b=1
+panel1_sort_extra-x=2
+panel1_sort_extra-y=1
+panel1_sort_extra-z=1
