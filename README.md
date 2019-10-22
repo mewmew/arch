@@ -11,7 +11,7 @@ git clone https://github.com/mewmew/arch
 # Copy configuration files.
 cp -r arch/* ${HOME}/
 # Install programs.
-${HOME}/install/install.sh
+${HOME}/install/fresh_install.sh
 ```
 
 ## Backup
