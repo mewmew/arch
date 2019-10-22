@@ -69,6 +69,7 @@ PKGS+=" optipng"
 PKGS+=" p7zip"
 PKGS+=" rlwrap"
 PKGS+=" rsync"
+PKGS+=" screen"
 PKGS+=" time"
 PKGS+=" tree"
 PKGS+=" udisks2"
@@ -117,7 +118,6 @@ PKGS+=" hardinfo"
 PKGS+=" lxrandr"
 PKGS+=" lxtask"
 PKGS+=" powertop"
-PKGS+=" screen"
 
 # Office
 PKGS+=" evince"
@@ -146,7 +146,6 @@ PKGS+=" qemu"
 PKGS+=" virtualbox"
 
 # Gaming
-PKGS+=" mednafen"
 PKGS+=" tiled"
 
 # Security
@@ -196,7 +195,6 @@ PKGS+=" nmap"
 #PKGS+=" dnsfilexfer"
 #PKGS+=" dtp-spoof"
 #PKGS+=" exabgp"
-#PKGS+=" hyenae"
 #PKGS+=" hyenae"
 
 # Install packages.
