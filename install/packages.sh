@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Add sublime GPG key and channel.
+wget -O /tmp/sublimehq-pub.gpg https://download.sublimetext.com/sublimehq-pub.gpg
+sudo pacman-key --add /tmp/sublimehq-pub.gpg
+sudo pacman-key --lsign-key 8A8F901A
+rm /tmp/sublimehq-pub.gpg
+echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
+
 # Xorg
 PKGS="mesa-libgl"
 PKGS+=" xclip"
@@ -56,6 +63,7 @@ PKGS+=" cpio"
 PKGS+=" fish"
 PKGS+=" fzf"
 PKGS+=" lsd"
+PKGS+=" man"
 PKGS+=" mdf2iso"
 PKGS+=" nrg2iso"
 PKGS+=" optipng"
@@ -193,13 +201,6 @@ PKGS+=" nmap"
 #PKGS+=" exabgp"
 #PKGS+=" hyenae"
 #PKGS+=" hyenae"
-
-# Add sublime GPG key and channel.
-wget -O /tmp/sublimehq-pub.gpg https://download.sublimetext.com/sublimehq-pub.gpg
-sudo pacman-key --add /tmp/sublimehq-pub.gpg
-sudo pacman-key --lsign-key 8A8F901A
-rm /tmp/sublimehq-pub.gpg
-echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 
 # Install packages.
 sudo pacman -Sy ${PKGS}

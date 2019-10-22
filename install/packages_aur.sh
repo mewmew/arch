@@ -31,7 +31,4 @@ AUR_PKGS+=" rr-multilib"
 
 # Put subliminal last since its AUR package often fails to build.
 
-# Video
-AUR_PKGS+=" subliminal"
-
 packer -S --noedit ${AUR_PKGS}

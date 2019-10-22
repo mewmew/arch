@@ -7,3 +7,4 @@ time ./go_get.sh
 time ./deps_ida.sh
 time ./deps_planescape_torment.sh
 time ./themes.sh
+time ./pip_install.sh
