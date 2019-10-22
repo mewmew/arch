@@ -18,7 +18,6 @@ PKGS+=" xorg-xinit"
 PKGS+=" xterm"
 
 # Wayland
-PKGS+=" startw"
 PKGS+=" sway"
 PKGS+=" swayidle"
 PKGS+=" swaylock"
