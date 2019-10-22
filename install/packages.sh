@@ -44,8 +44,6 @@ PKGS+=" xcompmgr"
 # Audio
 PKGS+=" alsa-lib"
 PKGS+=" alsa-utils"
-PKGS+=" bluez-firmware"
-PKGS+=" bluez-firmware"
 PKGS+=" bluez-libs"
 PKGS+=" bluez-utils"
 PKGS+=" pavucontrol"
@@ -91,7 +89,6 @@ PKGS+=" thunderbird"
 
 # Develop
 PKGS+=" base-devel"
-PKGS+=" bless"
 # * clang also include clang-tidy and clang-query
 PKGS+=" clang"
 PKGS+=" cloc"
@@ -139,7 +136,7 @@ PKGS+=" traceroute"
 PKGS+=" transmission-gtk"
 PKGS+=" wget"
 PKGS+=" wireless_tools"
-PKGS+=" wireshark-gtk"
+PKGS+=" wireshark-qt"
 PKGS+=" wpa_supplicant"
 
 # Virtualization
@@ -181,7 +178,6 @@ PKGS+=" rmlint"
 PKGS+=" cups"
 PKGS+=" gtk3-print-backends"
 PKGS+=" hplip"
-PKGS+=" python2-gnomekeyring"
 PKGS+=" system-config-printer"
 
 # Scanner

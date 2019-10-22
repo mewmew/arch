@@ -7,6 +7,9 @@
 AUR_PKGS="lwt-git"
 AUR_PKGS+=" spacefm-gtk2"
 
+# Audio
+AUR_PKGS+=" bluez-firmware"
+
 # Shell
 AUR_PKGS+=" duff"
 AUR_PKGS+=" grc"
@@ -14,7 +17,8 @@ AUR_PKGS+=" srm"
 AUR_PKGS+=" youtube-dl-git"
 
 # Develop
-AUR_PKGS=" edb-debugger"
+AUR_PKGS+=" bless"
+AUR_PKGS+=" edb-debugger"
 
 # Music
 AUR_PKGS+=" libcurl-gnutls" # spotify dep
