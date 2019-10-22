@@ -18,6 +18,13 @@ export TM_DIR="/home/u/goget/src/github.com/inspirer/textmapper"
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Fuzzy search.
+#
+#    [CTRL] + 't'   list files+folders in current directory
+#    [CTRL] + 'r'   search history of shell comamnds
+#    [ALT] + 'c'    fuzzy change directory
+source /usr/share/fzf/key-bindings.bash
+
 # Binary grep.
 alias bgrep='grep -obUaP'
 

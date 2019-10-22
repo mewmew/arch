@@ -62,6 +62,7 @@ sudo pacman -Sy \
 	ccd2iso \
 	cpio \
 	fish \
+	fzf \
 	lsd \
 	mdf2iso \
 	nrg2iso \

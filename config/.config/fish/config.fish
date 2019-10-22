@@ -27,6 +27,13 @@ function fish_user_key_bindings
 
     # Alt+o : pipe to xin
     bind \eo 'commandline -a "| xin;"'
+
+    # Fuzzy search.
+    #
+    #    [CTRL] + 't'   list files+folders in current directory
+    #    [CTRL] + 'r'   search history of shell comamnds
+    #    [ALT] + 'c'    fuzzy change directory
+    fzf_key_bindings
 end
 
 set fish_greeting ""
