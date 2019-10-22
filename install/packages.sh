@@ -21,6 +21,7 @@ PKGS+=" xterm"
 PKGS+=" sway"
 PKGS+=" swayidle"
 PKGS+=" swaylock"
+PKGS+=" xorg-server-xwayland"
 
 # Theme
 PKGS+=" adobe-source-code-pro-fonts"
