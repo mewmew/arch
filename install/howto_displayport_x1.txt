@@ -1,5 +1,5 @@
-packer -S evdi # maybe evdi-git
-packer -S displaylink
+packer -S --noedit evdi # maybe evdi-git
+packer -S --noedit displaylink
 sudo systemctl enable displaylink.service
 sudo systemctl start displaylink.service
 sudo modprobe evdi
