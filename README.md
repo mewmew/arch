@@ -9,7 +9,8 @@ As part of an ongoing effort to reduce unsolicited attachment to material assets
 ```shell
 git clone https://github.com/mewmew/arch
 # Copy configuration files.
-cp -r arch/* ${HOME}/
+cp -r arch/config/* ${HOME}/
+cp -r arch/bin ${HOME}/
 # Install programs.
 ${HOME}/install/fresh_install.sh
 ```
