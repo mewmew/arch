@@ -10,3 +10,15 @@ do
 	/home/u/bin/rand_wall.sh
 	sleep 1m
 done
+
+while [ "$DISPLAY" == ":1" ]
+do
+	/home/u/bin/rand_wall.sh
+	sleep 1m
+done
+
+while [ "$DISPLAY" == ":1.1" ]
+do
+	/home/u/bin/rand_wall.sh
+	sleep 1m
+done
