@@ -1,8 +1,8 @@
 packer -S --noedit downgrader
-pacman -S wine
+pacman -Sy wine
 downgrader wine
 # Select version 3.0
-pacman -S lib32-libpulse
+pacman -Sy lib32-libpulse
 # Add reg.key.
 REGEDIT4
 [HKEY_CURRENT_USER\Software\Wine\AppDefaults\Diablo.exe\Direct3D] "DirectDrawRenderer"="gdi"
