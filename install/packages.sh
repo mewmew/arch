@@ -26,6 +26,11 @@ PKGS+=" swayidle"
 PKGS+=" swaylock"
 PKGS+=" xorg-server-xwayland"
 
+# Graphics and sound libs.
+PKGS+=" sdl2_mixer"
+PKGS+=" sdl2_ttf"
+PKGS+=" libgl"
+
 # Theme
 PKGS+=" adobe-source-code-pro-fonts"
 PKGS+=" elementary-icon-theme"
@@ -67,6 +72,7 @@ PKGS+=" fish"
 PKGS+=" fzf"
 PKGS+=" lsd"
 PKGS+=" man"
+PKGS+=" man-pages"
 PKGS+=" mdf2iso"
 PKGS+=" nrg2iso"
 PKGS+=" optipng"
