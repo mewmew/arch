@@ -25,6 +25,9 @@ PKGS+=" sway"
 PKGS+=" swayidle"
 PKGS+=" swaylock"
 PKGS+=" xorg-server-xwayland"
+# Wayland screenshot
+PKGS+=" grim"
+PKGS+=" slurp"
 
 # Graphics and sound libs.
 PKGS+=" sdl2_mixer"
