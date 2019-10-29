@@ -99,6 +99,7 @@ input $keyboard xkb_layout us-swedish-umlaut
     bindsym $mod+r exec gmrun
     bindsym $mod+e exec spacefm
     bindsym $mod+g exec geany -i
+    bindsym $mod+p exec ~/bin/screenshot.sh
 
     # Enable laptop screen.
     bindsym $mod+x output $laptop enable
@@ -249,7 +250,7 @@ bar {
 
     mode dock
 
-    font "Source Code Pro 9"
+    #font "Source Code Pro 9"
 
     #status_command i3status
     status_command while date +'%Y-%m-%d %H:%M'; do sleep 1; done
