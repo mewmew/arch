@@ -79,8 +79,10 @@ output $laptop disable
 # Read `man 5 sway-input` for more information about this section.
 
 set $keyboard 1699:32800:Chicony_Saitek_Eclipse_Keyboard
+set $laptop_keyboard 1:1:AT_Translated_Set_2_keyboard
 
 input $keyboard xkb_layout us-swedish-umlaut
+input $laptop_keyboard xkb_layout us-swedish-umlaut
 
 #gaps inner 2
 #gaps outer 3
