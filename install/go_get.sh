@@ -23,3 +23,6 @@ go get -u github.com/aarzilli/gdlv
 
 # EBNF parser generator.
 go get -u github.com/inspirer/textmapper
+
+# Autojump.
+go get -u github.com/gsamokovarov/jump

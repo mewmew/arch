@@ -1,14 +1,14 @@
-set fish_plugins autojump
-source /etc/profile.d/autojump.fish
-set AUTOJUMP_IGNORE_CASE = 1
+# Autojump using https://github.com/gsamokovarov/jump
+status --is-interactive; and source (jump shell fish | psub)
 
 set -x EDITOR 'geany -i'
 set -x PATH /home/u/goget/bin $PATH
 set -x PATH /home/u/Desktop/go/bin $PATH
-set -x PATH /home/u/go1.13/bin $PATH
+set -x PATH /home/u/go/bin $PATH
 set -x PATH /home/u/.gem/ruby/2.6.0/bin $PATH
 set -x PATH /home/u/.local/bin $PATH
 set -x PATH /home/u/.cargo/bin $PATH
+set -x PATH /home/u/node_modules/.bin/ $PATH
 set -x PATH /home/u/Desktop/MiniZincIDE-2.1.5-bundle-linux-x86_64 $PATH
 set -x GOPATH /home/u/goget:/home/u/Desktop/go
 set -x _JAVA_OPTIONS '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
