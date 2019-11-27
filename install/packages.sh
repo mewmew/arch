@@ -65,7 +65,6 @@ PKGS+=" pulseaudio-bluetooth"
 
 # Shell
 PKGS+=" atool"
-PKGS+=" autojump"
 PKGS+=" bash-completion"
 PKGS+=" bat"
 PKGS+=" bchunk"
