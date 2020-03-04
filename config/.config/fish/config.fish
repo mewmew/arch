@@ -75,9 +75,6 @@ alias ls='lsd --color=auto -F'
 alias xin='xclip -in -selection clip'
 alias xout='xclip -out'
 
-# Cleaner output
-alias time='time -p'
-
 # Muscle memory is hard to forget
 alias ack='sift'
 
