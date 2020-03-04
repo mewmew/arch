@@ -32,7 +32,8 @@ output * bg /home/u/resources/wallhaven-wymjyx.jpg fill
 #output HDMI1 pos 0 0 res 1920x1080
 #output eDP1 pos 1920 0 res 1600x900
 
-set $laptop eDP-1
+#set $laptop eDP-1
+set $laptop LVDS-1
 set $screen HDMI-A-1
 
 #output $laptop disable
@@ -102,6 +103,7 @@ input $laptop_keyboard xkb_layout us-swedish-umlaut
     bindsym $mod+e exec spacefm
     bindsym $mod+g exec geany -i
     bindsym $mod+p exec ~/bin/screenshot.sh
+    bindsym $mod+Shift+p exec ~/bin/screenshot_full.sh
 
     # Enable laptop screen.
     bindsym $mod+x output $laptop enable
