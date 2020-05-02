@@ -34,14 +34,16 @@ output * bg /home/u/resources/wallhaven-109603.jpg fill
 
 #set $laptop eDP-1
 set $laptop LVDS-1
-set $screen HDMI-A-1
+#set $screen HDMI-A-1
+set $screen DP-2
 
 #output $laptop disable
 #output $laptop scale 1.2
 #output $screen scale 2
 output $laptop scale 1
 output $screen scale 1
-output $screen pos 0 0 res 3840x2160
+#output $screen pos 0 0 res 3840x2160
+output $screen pos 0 0 res 2560x1440
 
 # Planscape Torment configuration:
 #output $screen scale 1
