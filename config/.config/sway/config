@@ -110,7 +110,7 @@ input $laptop_keyboard xkb_options "grp:sclk_toggle,grp_led:scroll"
     bindsym $mod+Return exec $term
     bindsym $mod+t exec $term
     bindsym $mod+r exec gmrun
-    bindsym $mod+e exec spacefm
+    bindsym $mod+e exec caja
     bindsym $mod+g exec geany -i
     bindsym $mod+p exec ~/bin/screenshot.sh
     bindsym $mod+Shift+p exec ~/bin/screenshot_full.sh
