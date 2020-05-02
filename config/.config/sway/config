@@ -84,8 +84,16 @@ output $laptop disable
 set $keyboard 1699:32800:Chicony_Saitek_Eclipse_Keyboard
 set $laptop_keyboard 1:1:AT_Translated_Set_2_keyboard
 
-input $keyboard xkb_layout us-swedish-umlaut
-input $laptop_keyboard xkb_layout us-swedish-umlaut
+# Layout 1: US layout with [alt gr] Swedish umlauts.
+# Layout 2: Russian layout
+input $keyboard xkb_layout "us-swedish-umlaut,ru"
+input $laptop_keyboard xkb_layout "us-swedish-umlaut,ru"
+input $keyboard xkb_variant ",phonetic"
+input $laptop_keyboard xkb_variant ",phonetic"
+# Toggle keyboard layout with Scroll Lock. Show active layout on Scroll Lock
+# LED.
+input $keyboard xkb_options "grp:sclk_toggle,grp_led:scroll"
+input $laptop_keyboard xkb_options "grp:sclk_toggle,grp_led:scroll"
 
 #gaps inner 2
 #gaps outer 3
