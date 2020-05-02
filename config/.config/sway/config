@@ -21,7 +21,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 default_border pixel 1
 
 ### Output configuration
-output * bg /home/u/resources/wallhaven-wymjyx.jpg fill
+output * bg /home/u/resources/wallhaven-109603.jpg fill
 #
 # Example configuration:
 #
