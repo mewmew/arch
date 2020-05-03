@@ -92,8 +92,8 @@ input $keyboard xkb_variant ",phonetic"
 input $laptop_keyboard xkb_variant ",phonetic"
 # Toggle keyboard layout with Scroll Lock. Show active layout on Scroll Lock
 # LED.
-input $keyboard xkb_options "grp:sclk_toggle,grp_led:scroll"
-input $laptop_keyboard xkb_options "grp:sclk_toggle,grp_led:scroll"
+input $keyboard xkb_options "grp:caps_toggle,grp_led:scroll"
+input $laptop_keyboard xkb_options "grp:caps_toggle,grp_led:scroll"
 
 #gaps inner 2
 #gaps outer 3
