@@ -5,10 +5,11 @@
 export EDITOR='geany -i'
 export PATH=${HOME}/goget/bin:$PATH
 export PATH=${HOME}/Desktop/go/bin:$PATH
-export PATH=${HOME}/go1.13/bin:$PATH
-export PATH=${HOME}/.gem/ruby/2.6.0/bin:$PATH
+export PATH=${HOME}/go1.14/bin:$PATH
+export PATH=${HOME}/.gem/ruby/2.7.0/bin:$PATH
 export PATH=${HOME}/.local/bin:$PATH
 export PATH=${HOME}/.cargo/bin:$PATH
+export PATH=${HOME}/node_modules/.bin/:$PATH
 export PATH=${HOME}/Desktop/MiniZincIDE-2.1.5-bundle-linux-x86_64:$PATH
 export GOPATH=${HOME}/goget:${HOME}/Desktop/go
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
@@ -29,7 +30,7 @@ source /usr/share/fzf/key-bindings.bash
 alias bgrep='grep -obUaP'
 
 # ref: http://www.projectatomic.io/blog/2015/08/why-we-dont-let-non-root-users-run-docker-in-centos-fedora-or-rhel/
-alias docker='sudo /usr/bin/docker'
+#alias docker='sudo /usr/bin/docker'
 
 # Textmapper.
 alias textmapper='${TM_DIR}/tm-tool/libs/textmapper.sh'
