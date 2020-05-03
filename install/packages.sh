@@ -212,9 +212,6 @@ PKGS+=" nmap"
 # Install packages.
 sudo pacman -Sy ${PKGS}
 
-# Enable autojump in fish.
-sudo ln -s /usr/share/autojump/autojump.fish /etc/profile.d/autojump.fish
-
 # Add user to audio and wireshark groups.
 sudo gpasswd -a ${USER} audio
 sudo gpasswd -a ${USER} wireshark
