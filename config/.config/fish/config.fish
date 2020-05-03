@@ -4,8 +4,8 @@ status --is-interactive; and source (jump shell fish | psub)
 set -x EDITOR 'geany -i'
 set -x PATH /home/u/goget/bin $PATH
 set -x PATH /home/u/Desktop/go/bin $PATH
-set -x PATH /home/u/go/bin $PATH
-set -x PATH /home/u/.gem/ruby/2.6.0/bin $PATH
+set -x PATH /home/u/go1.14/bin $PATH
+set -x PATH /home/u/.gem/ruby/2.7.0/bin $PATH
 set -x PATH /home/u/.local/bin $PATH
 set -x PATH /home/u/.cargo/bin $PATH
 set -x PATH /home/u/node_modules/.bin/ $PATH
@@ -44,11 +44,14 @@ alias .... 'cd ../../..'
 alias ..... 'cd ../../../..'
 alias ...... 'cd ../../../../..'
 
+# Git simple log, ref: https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git#comment74542661_29180226
+alias gslog='git log --graph --simplify-by-decoration --pretty=format:"%C(yellow)%h%C(white)%d %C(bold black)%ar %C(reset)%n" --all'
+
 # Binary grep.
 alias bgrep='grep -obUaP'
 
 # ref: http://www.projectatomic.io/blog/2015/08/why-we-dont-let-non-root-users-run-docker-in-centos-fedora-or-rhel/
-alias docker='sudo /usr/bin/docker'
+#alias docker='sudo /usr/bin/docker'
 
 # Textmapper.
 #alias textmapper='(TM_DIR)/tm-tool/libs/textmapper.sh'
