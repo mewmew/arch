@@ -46,6 +46,7 @@ PKGS+=" slock"
 PKGS+=" ttf-hack"
 
 # Desktop
+PKGS+=" caja"
 PKGS+=" gmrun"
 PKGS+=" openbox"
 PKGS+=" scrot"

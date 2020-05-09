@@ -3,11 +3,13 @@
 # Install packer
 ./packer.sh
 
+AUR_PKGS=""
+
 # Wayland
 AUR_PKGS+=" startw"
 
 # Desktop
-AUR_PKGS="lwt-git"
+AUR_PKGS+=" lwt-git"
 AUR_PKGS+=" spacefm-gtk2"
 
 # Audio
