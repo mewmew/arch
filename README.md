@@ -4,7 +4,7 @@ As part of an ongoing effort to reduce unsolicited attachment to material assets
 
 ## Installation
 
-[Install Arch Linux](https://gist.github.com/mewmew/b139b36fb6e41a7d5a65).
+[Install Arch Linux](install/install_arch.sh).
 
 ```shell
 git clone https://github.com/mewmew/arch
