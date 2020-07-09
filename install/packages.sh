@@ -28,6 +28,8 @@ PKGS+=" xorg-server-xwayland"
 # Wayland screenshot
 PKGS+=" grim"
 PKGS+=" slurp"
+# Wayland screen recorder
+PKGS+=" wf-recorder"
 
 # Graphics and sound libs.
 PKGS+=" sdl2_mixer"
