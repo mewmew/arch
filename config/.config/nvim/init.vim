@@ -13,7 +13,7 @@ augroup LastPosition
 augroup END
 
 " Don't auto insert comments.
-set formatoptions-=cro
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Highlight line but not column.
 set cursorline nocursorcolumn
@@ -28,4 +28,7 @@ set background=dark
 
 " Set theme
 colorscheme badwolf
+
+" Use truecolor
+set termguicolors
 
