@@ -80,6 +80,9 @@ bindsym $alt+F4 kill
 # Lock screen
 bindsym $mod+l exec slock
 
+# Auto-set output device.
+bindsym $mod+x xrandr --auto
+
 #
 # Moving around:
 #
