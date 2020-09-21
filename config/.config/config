@@ -81,7 +81,7 @@ bindsym $alt+F4 kill
 bindsym $mod+l exec slock
 
 # Auto-set output device.
-bindsym $mod+x xrandr --auto
+bindsym $mod+x exec xrandr --auto
 
 #
 # Moving around:
