@@ -5,7 +5,7 @@
 export EDITOR='geany -i'
 export PATH=${HOME}/goget/bin:$PATH
 export PATH=${HOME}/Desktop/go/bin:$PATH
-export PATH=${HOME}/go1.14/bin:$PATH
+export PATH=${HOME}/go/bin:$PATH
 export PATH=${HOME}/.gem/ruby/2.7.0/bin:$PATH
 export PATH=${HOME}/.local/bin:$PATH
 export PATH=${HOME}/.cargo/bin:$PATH
@@ -43,6 +43,9 @@ alias cal='cal -m'
 
 # Colored grep.
 alias grep='grep --color=auto'
+
+# Colored ls, (-F) append '/' to directories, (-v) natural sort of numbers.
+alias ls='lsd --color=auto -F'
 
 # stdin to clipboard.
 alias xin='xclip -in -selection clip'

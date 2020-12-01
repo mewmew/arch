@@ -4,7 +4,7 @@ status --is-interactive; and source (jump shell fish | psub)
 set -x EDITOR 'geany -i'
 set -x PATH /home/u/goget/bin $PATH
 set -x PATH /home/u/Desktop/go/bin $PATH
-set -x PATH /home/u/go1.14/bin $PATH
+set -x PATH /home/u/go/bin $PATH
 set -x PATH /home/u/.gem/ruby/2.7.0/bin $PATH
 set -x PATH /home/u/.local/bin $PATH
 set -x PATH /home/u/.cargo/bin $PATH
@@ -77,6 +77,9 @@ alias ls='lsd --color=auto -F'
 # stdin to clipboard.
 alias xin='xclip -in -selection clip'
 alias xout='xclip -out'
+
+# Cleaner output
+#alias time='time -p'
 
 # Muscle memory is hard to forget
 alias ack='sift'
