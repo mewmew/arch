@@ -138,6 +138,7 @@ PKGS+=" powertop"
 # Office
 PKGS+=" evince"
 PKGS+=" libreoffice-still"
+PKGS+=" okular"
 PKGS+=" texlive-most"
 
 # Network
