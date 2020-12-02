@@ -3,14 +3,13 @@ status --is-interactive; and source (jump shell fish | psub)
 
 set -x EDITOR 'geany -i'
 set -x PATH /home/u/goget/bin $PATH
-set -x PATH /home/u/Desktop/go/bin $PATH
 set -x PATH /home/u/go/bin $PATH
 set -x PATH /home/u/.gem/ruby/2.7.0/bin $PATH
 set -x PATH /home/u/.local/bin $PATH
 set -x PATH /home/u/.cargo/bin $PATH
 set -x PATH /home/u/node_modules/.bin/ $PATH
 set -x PATH /home/u/Desktop/MiniZincIDE-2.1.5-bundle-linux-x86_64 $PATH
-set -x GOPATH /home/u/goget:/home/u/Desktop/go
+set -x GOPATH /home/u/goget
 set -x _JAVA_OPTIONS '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 set -x FREETYPE_PROPERTIES 'truetype:interpreter-version=40'
 set -x TM_DIR '/home/u/goget/src/github.com/inspirer/textmapper'
