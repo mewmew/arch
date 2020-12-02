@@ -1,0 +1,3 @@
+; caja GtkAccelMap rc-file         -*- scheme -*-
+
+(gtk_accel_path "<Actions>/ScriptsGroup/script_file:\\s\\s\\shome\\su\\s.config\\scaja\\sscripts\\sopen-terminal-here" "F4")
