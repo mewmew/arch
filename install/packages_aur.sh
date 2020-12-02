@@ -20,7 +20,6 @@ AUR_PKGS+=" bluez-firmware"
 AUR_PKGS+=" duff"
 AUR_PKGS+=" grc"
 AUR_PKGS+=" srm"
-AUR_PKGS+=" youtube-dl-git"
 
 # Develop
 AUR_PKGS+=" bless"
@@ -32,7 +31,7 @@ AUR_PKGS+=" spotify"
 
 # Theme
 # * Redshift for Wayland
-AUR_PKGS+=" redshift-wlr-gamma-control-git"
+#AUR_PKGS+=" redshift-wlr-gamma-control-git"
 # * Vertex theme for GTK
 AUR_PKGS+=" vertex-themes-git"
 

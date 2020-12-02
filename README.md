@@ -14,7 +14,8 @@ cp -r arch/bin ${HOME}/
 # Restart shell to load profile.
 /bin/bash
 # Install programs.
-${HOME}/install/fresh_install.sh
+cd ${HOME}/arch/install/
+./fresh_install.sh
 ```
 
 ## Backup
