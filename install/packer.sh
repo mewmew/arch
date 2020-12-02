@@ -8,6 +8,6 @@ wget https://aur.archlinux.org/cgit/aur.git/snapshot/packer-color.tar.gz
 tar -xzf packer-color.tar.gz
 cd packer-color/
 makepkg
-sudo pacman -U packer-color-*.pkg.tar.xz
+sudo pacman -U packer-color-*.pkg.tar.zst
 sudo ln -s /usr/bin/packer-color /usr/bin/packer
 rm -rf /tmp/foo
