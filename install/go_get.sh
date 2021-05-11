@@ -1,28 +1,28 @@
 #!/bin/bash
 
 # Regexp search and replace.
-go get -u github.com/mewkiz/cmd/sar
+go install github.com/mewkiz/cmd/sar@master
 
 # Faster grep.
-go get -u github.com/svent/sift
+go install github.com/svent/sift@master
 
 # Wallpaper download utility.
-go get -u github.com/mewmew/playground/archive/wallhaven/cmd/walls
+go install github.com/mewmew/playground/archive/wallhaven/cmd/walls@master
 
 # Word definition lookup.
-go get -u github.com/Rican7/define
+go install github.com/Rican7/define@master
 
 # Go debugger.
-go get -u github.com/derekparker/delve/cmd/dlv
+go install github.com/go-delve/delve/cmd/dlv@master
 
 # Go tools.
-go get -u golang.org/x/tools/...
+go install golang.org/x/tools/...@master
 
 # Frontend to Delve.
-go get -u github.com/aarzilli/gdlv
+go install github.com/aarzilli/gdlv@master
 
 # EBNF parser generator.
-go get -u github.com/inspirer/textmapper
+#go install github.com/inspirer/textmapper@master
 
 # Autojump.
-go get -u github.com/gsamokovarov/jump
+go install github.com/gsamokovarov/jump@main
