@@ -177,9 +177,6 @@ PKGS+=" gimp"
 PKGS+=" imagemagick"
 PKGS+=" viewnior"
 
-# Music
-PKGS+=" deadbeef"
-
 # Video
 PKGS+=" libva-intel-driver"
 PKGS+=" libvdpau-va-gl"
@@ -221,4 +218,4 @@ sudo pacman -Sy ${PKGS}
 
 # Add user to audio and wireshark groups.
 sudo gpasswd -a ${USER} audio
-sudo gpasswd -a ${USER} wireshark
+#sudo gpasswd -a ${USER} wireshark
