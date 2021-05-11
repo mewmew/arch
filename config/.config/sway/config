@@ -101,6 +101,7 @@ input $laptop_keyboard xkb_options "grp:caps_toggle,grp_led:scroll"
 #for_window [title=".*mpv$"] floating enable
 #for_window [title=".*lwt$"] floating enable
 #for_window [title=".*$"] floating enable
+for_window [title=".*gmrun$"] floating enable
 
 ### Key bindings
 #
