@@ -183,6 +183,7 @@ PKGS+=" libva-intel-driver"
 PKGS+=" libvdpau-va-gl"
 PKGS+=" mpv"
 PKGS+=" vlc"
+PKGS+=" vokoscreen"
 
 # Reversing
 PKGS+=" binwalk"
