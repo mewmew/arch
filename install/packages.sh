@@ -49,6 +49,7 @@ PKGS+=" ttf-hack"
 
 # Desktop
 PKGS+=" caja"
+PKGS+=" caja-open-terminal"
 PKGS+=" gmrun"
 PKGS+=" openbox"
 PKGS+=" scrot"
