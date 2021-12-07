@@ -180,6 +180,7 @@ PKGS+=" imagemagick"
 PKGS+=" viewnior"
 
 # Video
+PKGS+=" avidemux-qt"
 PKGS+=" libva-intel-driver"
 PKGS+=" libvdpau-va-gl"
 PKGS+=" mpv"
