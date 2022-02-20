@@ -10,7 +10,7 @@ AUR_PKGS+=" lwt-git"
 AUR_PKGS+=" wdisplays"
 
 # Admin
-AUR_PKGS+=" hardinfo"
+AUR_PKGS+=" hardinfo-git"
 
 # Audio
 AUR_PKGS+=" bluez-firmware"
@@ -41,4 +41,4 @@ AUR_PKGS+=" rr-multilib"
 
 # Put subliminal last since its AUR package often fails to build.
 
-yay -S --noeditmenu ${AUR_PKGS}
+yay -S --noeditmenu --nodiffmenu ${AUR_PKGS}

@@ -1,5 +1,5 @@
-yay -S --noeditmenu evdi # maybe evdi-git
-yay -S --noeditmenu displaylink
+yay -S --noeditmenu --nodiffmenu evdi # maybe evdi-git
+yay -S --noeditmenu --nodiffmenu displaylink
 sudo systemctl enable displaylink.service
 sudo systemctl start displaylink.service
 sudo modprobe evdi
