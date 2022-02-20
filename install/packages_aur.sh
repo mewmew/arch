@@ -35,4 +35,4 @@ AUR_PKGS+=" rr-multilib"
 
 # Put subliminal last since its AUR package often fails to build.
 
-packer -S --noedit ${AUR_PKGS}
+yay -S --noeditmenu ${AUR_PKGS}

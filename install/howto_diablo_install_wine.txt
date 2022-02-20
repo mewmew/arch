@@ -1,4 +1,4 @@
-packer -S --noedit downgrader
+yay -S --noeditmenu downgrader
 pacman -Sy wine
 downgrader wine
 # Select version 3.0

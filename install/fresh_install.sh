@@ -1,6 +1,7 @@
 #!/bin/bash
 
 time ./packages.sh
+time ./yay.sh
 time ./packages_aur.sh
 time ./go.sh
 time ./go_get.sh
