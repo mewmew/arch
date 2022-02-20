@@ -1,13 +1,7 @@
 #!/bin/bash
 
-git clone https://go.googlesource.com/go.git ~/go
+go install golang.org/dl/go1.16@latest
+go1.16 download
 
-# Install Go 1.4.
-cp -r ~/go ~/go1.4
-cd ~/go1.4/src
-git checkout release-branch.go1.4
-time CGO_ENABLED=0 ./all.bash
-
-# Install Go tip.
-cd ~/go/src
-time ./all.bash
+go install golang.org/dl/go1.17@latest
+go1.17 download
