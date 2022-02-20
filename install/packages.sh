@@ -60,7 +60,6 @@ PKGS+=" pulseaudio-alsa"
 PKGS+=" pulseaudio-bluetooth"
 
 # Shell
-PKGS+=" atool"
 PKGS+=" bash-completion"
 PKGS+=" bat"
 PKGS+=" bchunk"

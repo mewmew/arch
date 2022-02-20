@@ -19,6 +19,7 @@ AUR_PKGS+=" bluez-firmware"
 AUR_PKGS+=" gdmap"
 
 # Shell
+AUR_PKGS+=" atool"
 AUR_PKGS+=" duff"
 AUR_PKGS+=" srm"
 
