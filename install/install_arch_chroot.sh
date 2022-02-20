@@ -24,14 +24,14 @@ read PART_PREFIX
 
 # Install sar.
 echo "Installing sar."
-go get github.com/mewkiz/cmd/sar
+go install github.com/mewkiz/cmd/sar@master
 export PATH=$HOME/go/bin:$PATH
 
 # Update /etc/fstab
 #
 # * Change to relatime to noatime for all non-boot partitions.
 echo "Updating /etc/fstab"
-sar -i "([ \t]+/[ \t]+ext4[ \t]+rw),relatime," "\${1},noatime," /etc/fstab
+sar -i -unescape-replace "([ \t]+/[ \t]+ext4[ \t]+rw),relatime" "\${1},noatime" /etc/fstab
 
 # Setup system clock.
 echo "Configuring system clock."
@@ -71,14 +71,14 @@ passwd ${USERNAME}
 
 # Give wheel users sudo permissions.
 echo "Giving wheel users sudo permissions."
-sar -i "[\n]# (%wheel ALL=[(]ALL[)] ALL[\n])" "\n\${1}" /etc/sudoers
+sar -i -unescape-replace "[\n]# (%wheel ALL=[(]ALL:ALL[)] ALL[\n])" "\n\${1}" /etc/sudoers
 
 # Update /etc/mkinitcpio.conf.
 #
 # * Add 'ext4' to MODULES.
 # * Add 'encrypt' and 'lvm2' to HOOKS before filesystems.
 echo "Updating /etc/mkinitcpio.conf"
-sar -i "[\n]MODULES=[(][)]" "\nMODULES=(ext4)" /etc/mkinitcpio.conf
+sar -i -unescape-replace "[\n]MODULES=[(][)]" "\nMODULES=(ext4)" /etc/mkinitcpio.conf
 sar -i "([\n]HOOKS=[(][^\n]*block) filesystems" "\${1} encrypt lvm2 filesystems" /etc/mkinitcpio.conf
 
 # Regenerate initrd image.
