@@ -15,11 +15,9 @@ AUR_PKGS+=" bluez-firmware"
 
 # Shell
 AUR_PKGS+=" duff"
-AUR_PKGS+=" grc"
 AUR_PKGS+=" srm"
 
 # Develop
-AUR_PKGS+=" bless"
 AUR_PKGS+=" edb-debugger"
 
 # Music

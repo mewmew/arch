@@ -76,6 +76,7 @@ PKGS+=" ccd2iso"
 PKGS+=" cpio"
 PKGS+=" fish"
 PKGS+=" fzf"
+PKGS+=" grc"
 PKGS+=" lsd"
 PKGS+=" man"
 PKGS+=" man-pages"
@@ -108,6 +109,7 @@ PKGS+=" thunderbird"
 
 # Develop
 PKGS+=" base-devel"
+PKGS+=" bless"
 # * clang also include clang-tidy and clang-query
 PKGS+=" clang"
 PKGS+=" cloc"
