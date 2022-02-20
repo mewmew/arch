@@ -1,7 +1,9 @@
 #!/bin/bash
 
+PKGS=""
+
 # Xorg
-PKGS="mesa-libgl"
+PKGS+=" mesa-libgl"
 PKGS+=" xclip"
 PKGS+=" xf86-video-intel"
 PKGS+=" xorg-apps"
@@ -124,7 +126,6 @@ PKGS+=" vbindiff"
 # Admin
 PKGS+=" dosfstools"
 PKGS+=" gparted"
-PKGS+=" hardinfo"
 PKGS+=" lxrandr"
 PKGS+=" lxtask"
 PKGS+=" ntfs-3g"
@@ -184,7 +185,6 @@ PKGS+=" vokoscreen"
 PKGS+=" binwalk"
 
 # Cleanup
-PKGS+=" gdmap"
 PKGS+=" rmlint"
 
 # Printer

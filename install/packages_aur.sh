@@ -9,8 +9,14 @@ AUR_PKGS+=" startw"
 AUR_PKGS+=" lwt-git"
 AUR_PKGS+=" wdisplays"
 
+# Admin
+AUR_PKGS+=" hardinfo"
+
 # Audio
 AUR_PKGS+=" bluez-firmware"
+
+# Cleanup
+AUR_PKGS+=" gdmap"
 
 # Shell
 AUR_PKGS+=" duff"
