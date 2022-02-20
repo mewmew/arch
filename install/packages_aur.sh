@@ -7,7 +7,6 @@ AUR_PKGS+=" startw"
 
 # Desktop
 AUR_PKGS+=" lwt-git"
-AUR_PKGS+=" spacefm-gtk2"
 AUR_PKGS+=" wdisplays"
 
 # Audio
