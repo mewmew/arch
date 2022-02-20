@@ -136,6 +136,7 @@ PKGS+=" hardinfo"
 PKGS+=" lxrandr"
 PKGS+=" lxtask"
 PKGS+=" ntfs-3g"
+PKGS+=" packer"
 PKGS+=" powertop"
 
 # Office

@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Install packer
-./packer.sh
-
 AUR_PKGS=""
 
 # Wayland
