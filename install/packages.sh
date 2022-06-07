@@ -14,6 +14,7 @@ PKGS+=" xterm"
 
 # Wayland
 PKGS+=" sway"
+PKGS+=" swaybg"
 PKGS+=" swayidle"
 PKGS+=" swaylock"
 PKGS+=" xorg-server-xwayland"

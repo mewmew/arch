@@ -3,6 +3,9 @@
 # Regexp search and replace.
 go install github.com/mewkiz/cmd/sar@master
 
+# Local HTTP file server.
+go install github.com/mewmew/playground/cmd/dela@master
+
 # Faster grep.
 go install github.com/svent/sift@master
 
