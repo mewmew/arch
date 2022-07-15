@@ -3,6 +3,12 @@
 # Regexp search and replace.
 go install github.com/mewkiz/cmd/sar@master
 
+# Rename images based on embedded date.
+go install github.com/mewkiz/cmd/img_date@master
+
+# Visualize asm against Go source code.
+go install loov.dev/lensm@main
+
 # Local HTTP file server.
 go install github.com/mewmew/playground/cmd/dela@master
 
