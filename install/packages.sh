@@ -23,6 +23,8 @@ PKGS+=" grim"
 PKGS+=" slurp"
 # Wayland screen recorder
 PKGS+=" wf-recorder"
+# Wayland copy/paste
+PKGS+=" wl-clipboard"
 
 # Graphics and sound libs.
 PKGS+=" sdl2_mixer"
