@@ -39,6 +39,4 @@ AUR_PKGS+=" vertex-themes-git"
 # Debug
 AUR_PKGS+=" rr-multilib"
 
-# Put subliminal last since its AUR package often fails to build.
-
 yay -S --noeditmenu --nodiffmenu ${AUR_PKGS}
