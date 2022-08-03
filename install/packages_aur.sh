@@ -25,6 +25,7 @@ AUR_PKGS+=" srm"
 
 # Develop
 AUR_PKGS+=" edb-debugger"
+AUR_PKGS+=" imhex-bin"
 
 # Music
 AUR_PKGS+=" libcurl-gnutls" # spotify dep
