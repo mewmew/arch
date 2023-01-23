@@ -43,9 +43,8 @@ PKGS+=" slock"
 PKGS+=" ttf-hack"
 
 # Desktop
-PKGS+=" caja"
-PKGS+=" caja-open-terminal"
 PKGS+=" gmrun"
+PKGS+=" nemo"
 PKGS+=" openbox"
 PKGS+=" scrot"
 PKGS+=" speedcrunch"

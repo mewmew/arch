@@ -1,6 +1,0 @@
-#!/bin/sh
-#
-# Opens-terminal in current directory.
-
-cd $CAJA_SCRIPT_CURRENT_URI
-exec lwt

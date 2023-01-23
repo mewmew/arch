@@ -1,3 +1,0 @@
-; caja GtkAccelMap rc-file         -*- scheme -*-
-
-(gtk_accel_path "<Actions>/ExtensionsMenuGroup/CajaOpenTerminal::open_terminal" "F4")
