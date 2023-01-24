@@ -1,0 +1,2 @@
+$ gsettings set org.cinnamon.desktop.default-applications.terminal exec lwt
+$ gsettings set org.cinnamon.desktop.interface can-change-accels true
