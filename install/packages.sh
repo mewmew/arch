@@ -127,6 +127,7 @@ PKGS+=" vbindiff"
 # Admin
 PKGS+=" dosfstools"
 PKGS+=" gparted"
+PKGS+=" light"
 PKGS+=" lxrandr"
 PKGS+=" lxtask"
 PKGS+=" ntfs-3g"
