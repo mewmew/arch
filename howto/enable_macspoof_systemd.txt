@@ -1,0 +1,1 @@
+sudo systemctl enable macspoof@wlp3s0.service
