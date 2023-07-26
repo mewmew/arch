@@ -137,7 +137,7 @@ PKGS+=" powertop"
 PKGS+=" evince"
 PKGS+=" libreoffice-still"
 PKGS+=" okular"
-PKGS+=" texlive-most"
+PKGS+=" texlive"
 
 # Network
 PKGS+=" dnsmasq"
