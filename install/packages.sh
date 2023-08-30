@@ -33,10 +33,12 @@ PKGS+=" libgl"
 
 # Theme
 PKGS+=" adobe-source-code-pro-fonts"
+PKGS+=" breeze"
 PKGS+=" elementary-icon-theme"
 PKGS+=" feh"
 PKGS+=" gtk-engine-murrine"
 PKGS+=" lxappearance"
+PKGS+=" qt5ct"
 # * Redshift for X11.
 #PKGS+=" redshift"
 PKGS+=" slock"
