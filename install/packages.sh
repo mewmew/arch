@@ -96,7 +96,6 @@ PKGS+=" geany"
 PKGS+=" sublime-text"
 
 # Browser
-PKGS+=" chromium"
 PKGS+=" firefox"
 
 # E-mail
