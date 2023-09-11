@@ -23,6 +23,9 @@ AUR_PKGS+=" atool"
 AUR_PKGS+=" duff"
 AUR_PKGS+=" srm"
 
+# Browser
+AUR_PKGS+=" ungoogled-chromium-bin"
+
 # Develop
 AUR_PKGS+=" edb-debugger"
 
