@@ -85,12 +85,13 @@ fi
 
 # Install packages.
 echo "Installing packages."
-PACKAGES="base base-devel linux linux-firmware mkinitcpio lvm2 nano wpa_supplicant dialog netctl net-tools dhcpcd git openssh wget go acpi"
+PACKAGES="archlinux-keyring base base-devel linux linux-firmware mkinitcpio lvm2 nano wpa_supplicant dialog netctl net-tools dhcpcd git openssh wget go acpi"
 if [ ${USE_EFI} == "y" ]; then
 	PACKAGES+=" grub-efi-x86_64 efibootmgr"
 else
 	PACKAGES+=" grub"
 fi
+pacman -Sy archlinux-keyring
 pacstrap /mnt ${PACKAGES}
 
 # Generate /etc/fstab.
