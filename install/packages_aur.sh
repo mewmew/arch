@@ -40,6 +40,9 @@ AUR_PKGS+=" spotify"
 # * Vertex theme for GTK
 AUR_PKGS+=" vertex-themes-git"
 
+# Network
+AUR_PKGS+=" mullvad-vpn"
+
 # Debug
 AUR_PKGS+=" rr-multilib"
 
