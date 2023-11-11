@@ -22,6 +22,7 @@ AUR_PKGS+=" gdmap"
 AUR_PKGS+=" atool"
 AUR_PKGS+=" duff"
 AUR_PKGS+=" srm"
+AUR_PKGS+=" yt-dlp
 
 # Browser
 AUR_PKGS+=" ungoogled-chromium-bin"

@@ -88,7 +88,6 @@ PKGS+=" tree"
 PKGS+=" udisks2"
 PKGS+=" unrar"
 PKGS+=" unzip"
-PKGS+=" youtube-dl"
 PKGS+=" zip"
 
 # Editor
