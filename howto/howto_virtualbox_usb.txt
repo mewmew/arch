@@ -1,0 +1,8 @@
+# How to VirtualBox USB
+
+```bash
+sudo pacman -Sy virtualbox-host-modules-arch
+sudo gpasswd -a u vboxusers
+```
+
+Enable USB in settings.
