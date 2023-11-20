@@ -64,6 +64,7 @@ PKGS+=" pulseaudio-alsa"
 PKGS+=" pulseaudio-bluetooth"
 
 # Shell
+PKGS+=" foot"
 PKGS+=" bash-completion"
 PKGS+=" bat"
 PKGS+=" bchunk"
@@ -204,6 +205,9 @@ PKGS+=" sane"
 PKGS+=" aircrack-ng"
 PKGS+=" hydra"
 PKGS+=" nmap"
+
+# Music
+PKGS+=" spotify-launcher"
 
 # blackarch
 #PKGS+=" arp-scan"

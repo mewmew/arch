@@ -33,9 +33,9 @@ PKGS+=" pulseaudio-alsa"
 PKGS+=" pulseaudio-bluetooth"
 
 # Shell
+PKGS+=" foot"
 PKGS+=" bash-completion"
 PKGS+=" bat"
-PKGS+=" fish"
 PKGS+=" fish"
 PKGS+=" fzf"
 PKGS+=" man"
@@ -100,6 +100,9 @@ PKGS+=" viewnior"
 # Video
 PKGS+=" mpv"
 PKGS+=" vlc"
+
+# Music
+PKGS+=" spotify-launcher"
 
 # Install packages.
 sudo pacman -Sy ${PKGS}

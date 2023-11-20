@@ -6,7 +6,6 @@ AUR_PKGS=""
 AUR_PKGS+=" startw"
 
 # Desktop
-AUR_PKGS+=" lwt-git"
 AUR_PKGS+=" wdisplays"
 
 # Admin
@@ -22,17 +21,13 @@ AUR_PKGS+=" gdmap"
 AUR_PKGS+=" atool"
 AUR_PKGS+=" duff"
 AUR_PKGS+=" srm"
-AUR_PKGS+=" yt-dlp
+AUR_PKGS+=" yt-dlp"
 
 # Browser
 AUR_PKGS+=" ungoogled-chromium-bin"
 
 # Develop
 AUR_PKGS+=" edb-debugger"
-
-# Music
-AUR_PKGS+=" libcurl-gnutls" # spotify dep
-AUR_PKGS+=" spotify"
 
 # Theme
 # * Redshift for Wayland
