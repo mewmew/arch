@@ -33,6 +33,8 @@ PKGS+=" pulseaudio-alsa"
 PKGS+=" pulseaudio-bluetooth"
 
 # Shell
+PKGS+=" yt-dlp"
+PKGS+=" atool"
 PKGS+=" foot"
 PKGS+=" bash-completion"
 PKGS+=" bat"
