@@ -13,12 +13,41 @@ cd "${HOME}/"
 
 # Private keys.
 echo "~/.ssh"
-#time rsync -r --info=progress2 ".gnupg" "${BACKUP_DIR}/"
 time rsync -r --info=progress2 ".ssh" "${BACKUP_DIR}/"
+
+#echo "~/.gnupg"
+#time rsync -r --info=progress2 ".gnupg" "${BACKUP_DIR}/"
+
+#echo "~/.gpg_keys"
+#time rsync -r --info=progress2 ".gpg_keys" "${BACKUP_DIR}/"
 
 # Wireless configs.
 echo "~/.wireless"
 time rsync -r --info=progress2 ".wireless" "${BACKUP_DIR}/"
+
+# Scripts.
+echo "~/bin"
+time rsync -r --info=progress2 "bin" "${BACKUP_DIR}/"
+
+# IDA.
+echo "~/idapro-7.5.2"
+time rsync -r --info=progress2 "idapro-7.5.2" "${BACKUP_DIR}/"
+
+# Wallpapers.
+echo "~/resources"
+time rsync -r --info=progress2 "resources" "${BACKUP_DIR}/"
+
+# Desktop.
+echo "~/Desktop"
+time rsync -r --info=progress2 "Desktop" "${BACKUP_DIR}/"
+
+# life.
+echo "~/life"
+time rsync -r --info=progress2 "life" "${BACKUP_DIR}/"
+
+# share.
+echo "~/_share_"
+time rsync -r --info=progress2 "_share_" "${BACKUP_DIR}/"
 
 # Virtual box.
 #mkdir -p "${BACKUP_DIR}/.config/"
@@ -27,14 +56,6 @@ time rsync -r --info=progress2 ".wireless" "${BACKUP_DIR}/"
 #echo "~/VirtualBox VMs"
 #time rsync -r --info=progress2 "VirtualBox VMs" "${BACKUP_DIR}/"
 
-# Scripts.
-echo "~/bin"
-time rsync -r --info=progress2 "bin" "${BACKUP_DIR}/"
-
-# Desktop.
-echo "~/Desktop"
-time rsync -r --info=progress2 "Desktop" "${BACKUP_DIR}/"
-
 # Downloads.
 echo "~/dl"
 time rsync -r --info=progress2 "dl" "${BACKUP_DIR}/"
@@ -42,21 +63,5 @@ time rsync -r --info=progress2 "dl" "${BACKUP_DIR}/"
 # Downloads.
 echo "~/Downloads"
 time rsync -r --info=progress2 "Downloads" "${BACKUP_DIR}/"
-
-# Downloads.
-echo "~/idapro-7.5.2"
-time rsync -r --info=progress2 "idapro-7.5.2" "${BACKUP_DIR}/"
-
-# life.
-echo "~/life"
-time rsync -r --info=progress2 "life" "${BACKUP_DIR}/"
-
-# Wallpapers.
-echo "~/resources"
-time rsync -r --info=progress2 "resources" "${BACKUP_DIR}/"
-
-# share.
-echo "~/_share_"
-time rsync -r --info=progress2 "_share_" "${BACKUP_DIR}/"
 
 echo "BACKUP DONE"
