@@ -1,0 +1,5 @@
+# Fonts for icons (e.g. folders, terminal, document icons)
+pacman -Sy ttf-nerd-fonts-symbols
+
+# Fonts for emojis (e.g. snowflake)
+pacman -Sy noto-fonts-emoji
