@@ -1,1 +1,1 @@
-gsettings set org.cinnamon.desktop.default-applications.terminal exec foot
+gsettings set org.cinnamon.desktop.default-applications.terminal exec lwt
