@@ -1,2 +1,7 @@
 sudo pacman -Sy materia-gtk-theme
+sudo pacman -Sy gnome-themes-extra
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
+
+sudo pacman -Sy xfce4-settings
+# edit "/Net/ThemeName" to "Adwaita-dark" in the settings editor
+xfce4-settings-editor
