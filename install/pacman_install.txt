@@ -1,0 +1,119 @@
+### [ pre-install ] ###
+
+# prepare sublime mirror
+~/arch/install/prepend_multilib_and_sublime_mirrorlist.sh
+
+# aur
+~/arch/install/yay.sh
+
+### [ install ] ###
+
+# Core
+sway
+swaybg
+swaylock
+
+# Terminal
+lwt-git
+fish
+man
+atool
+unzip
+p7zip
+unrar
+cloc
+
+# Browser
+firefox
+ungoogled-chromium-bin
+
+# Application launcher
+gmrun
+
+# File manager
+nemo
+
+# Text editor
+sublime-text
+
+# Image viewer
+ristretto
+
+# Video player
+mpv
+vlc
+
+# debugging
+gdb
+ltrace
+
+# dev
+rustup
+go
+
+# Email client
+thunderbird
+
+# Chat client
+discord
+
+# Virtual Machines
+virtualbox
+
+# Encrypted storage
+veracrypt
+
+# VPN
+mullvad-vpn-bin
+
+# Screenshot
+grim
+slurp
+
+# Alternative (crappy) text editor
+geany
+
+# Image manipulation tools
+imagemagick
+
+# Image editor
+gimp
+
+# Calculator
+speedcrunch
+
+# PDF viewer
+evince
+okular
+
+# LaTeX
+texlive
+latexrun
+
+# Disk management
+gparted
+dosfstools
+duff
+
+# 3d tools
+blender
+
+# Map editor
+tiled
+
+# Torrents
+transmission-gtk
+
+# Youtube download
+yt-dlp
+
+# Network
+netcat
+
+# extra
+fzf
+autojump
+lsd
+grc
+bat
+tree
