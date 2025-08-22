@@ -25,13 +25,13 @@ PKGS+=" cloc"
 PKGS+=" firefox"
 
 # Application launcher
-PKGS+=" gmrun"
+#PKGS+=" gmrun"
 
 # File manager
 PKGS+=" nemo"
 
 # Text editor
-PKGS+=" sublime-text"
+#PKGS+=" sublime-text"
 
 # Image viewer
 PKGS+=" ristretto"

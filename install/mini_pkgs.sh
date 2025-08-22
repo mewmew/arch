@@ -18,7 +18,6 @@ PKGS+=" wf-recorder"
 PKGS+=" wl-clipboard"
 
 # Desktop
-PKGS+=" gmrun"
 PKGS+=" nemo"
 PKGS+=" speedcrunch"
 
@@ -50,7 +49,7 @@ PKGS+=" zip"
 
 # Editor
 PKGS+=" geany"
-PKGS+=" sublime-text"
+#PKGS+=" sublime-text"
 
 # Browser
 PKGS+=" firefox"
@@ -75,7 +74,7 @@ PKGS+=" strace"
 PKGS+=" vbindiff"
 
 # Admin
-PKGS+=" light"
+#PKGS+=" light"
 
 # Office
 PKGS+=" evince"
