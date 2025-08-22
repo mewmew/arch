@@ -28,20 +28,20 @@ if [ ${USE_EFI} == "y" ]; then
 	# Create partions with MBR partition table.
 	#
 	#    g           - new empty GPT partition table
-	#    n +100M y   - new partition 100M /boot/efi
-	#    n +250M y   - new partition 250M /boot
+	#    n +1G y     - new partition 1G /boot/efi
+	#    n +5G y     - new partition 5G /boot
 	#    n y         - new partition 100% /
 	#    w           - write changes and exit
-	echo -e "g\nn\n\n\n+100M\ny\nt\n1\nn\n\n\n+250M\nn\n\n\n\ny\nw\n" | fdisk /dev/${DISK}
+	echo -e "g\nn\n\n\n+1G\ny\nt\n1\nn\n\n\n+5G\nn\n\n\n\ny\nw\n" | fdisk /dev/${DISK}
 else
 	# Create partions with MBR partition table.
 	#
 	#    o           - new empty DOS partition table
-	#    n p +250M y - new partition 250M /boot
+	#    n p +5G y   - new partition 5G /boot
 	#    a 1         - toggle bootable flag
 	#    n p y       - new partition 100% /
 	#    w           - write changes and exit
-	echo -e "o\nn\np\n\n\n+250M\ny\na\n1\nn\np\n\n\n\ny\nw\n" | fdisk /dev/${DISK}
+	echo -e "o\nn\np\n\n\n+5G\ny\na\n1\nn\np\n\n\n\ny\nw\n" | fdisk /dev/${DISK}
 fi
 
 # Format partitions.
