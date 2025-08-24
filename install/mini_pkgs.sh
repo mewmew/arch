@@ -105,5 +105,8 @@ PKGS+=" vlc"
 # Music
 PKGS+=" spotify-launcher"
 
+# Writing
+PKGS+=" typst"
+
 # Install packages.
 sudo pacman -Sy ${PKGS}
