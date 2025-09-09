@@ -29,3 +29,6 @@ go install golang.org/x/tools/...@master
 
 # Autojump.
 go install github.com/gsamokovarov/jump@main
+
+# Disk Space.
+go install github.com/muesli/duf@master
