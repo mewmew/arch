@@ -5,3 +5,5 @@ gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
 sudo pacman -Sy xfce4-settings
 # edit "/Net/ThemeName" to "Adwaita-dark" in the settings editor
 xfce4-settings-editor
+
+export GTK_THEME=Adwaita:dark
