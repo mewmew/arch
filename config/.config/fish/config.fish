@@ -19,6 +19,9 @@ function fish_user_key_bindings
     # Alt+. : insert last argument from the last command.
     bind \e. 'history-token-search-backward'
 
+    # Alt+backspace to remove last word.
+    bind \e\x7F backward-kill-word
+
     # Fuzzy search.
     #
     #    [CTRL] + 't'   list files+folders in current directory
