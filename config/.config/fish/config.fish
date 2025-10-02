@@ -55,3 +55,5 @@ alias ls='lsd --color=auto -F'
 
 # Muscle memory is hard to forget
 alias ack='sift'
+
+set -x GTK_THEME 'Adwaita:dark'
