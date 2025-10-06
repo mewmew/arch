@@ -11,16 +11,22 @@ set -x QT_QPA_PLATFORMTHEME qt5ct
 
 function fish_user_key_bindings
     # Alt+l : print the file contents of the current folder.
-    bind \el 'echo; and ls; and commandline -f repaint'
+    bind alt-l 'echo; and ls; and commandline -f repaint'
 
     # Alt+a : print the file (hidden included) contents of the current folder.
-    bind \ea 'echo; and ls -a; and commandline -f repaint'
+    bind alt-a 'echo; and ls -a; and commandline -f repaint'
 
     # Alt+. : insert last argument from the last command.
-    bind \e. 'history-token-search-backward'
+    bind alt-. 'history-token-search-backward'
 
     # Alt+backspace to remove last word.
-    bind \e\x7F backward-kill-word
+    bind alt-backspace backward-kill-word
+
+    # Alt+left to move one word to the left.
+    bind alt-left backward-word
+
+    # Alt+right to move one word to the right.
+    bind alt-right forward-word
 
     # Fuzzy search.
     #
