@@ -33,6 +33,9 @@ time rsync -r --info=progress2 "bin" "${BACKUP_DIR}/"
 echo "~/idapro-7.5.2"
 time rsync -r --info=progress2 "idapro-7.5.2" "${BACKUP_DIR}/"
 
+echo "~/idapro-9.0"
+time rsync -r --info=progress2 "idapro-9.0" "${BACKUP_DIR}/"
+
 # Wallpapers.
 echo "~/resources"
 time rsync -r --info=progress2 "resources" "${BACKUP_DIR}/"
