@@ -48,8 +48,8 @@ time rsync -r --info=progress2 "Desktop" "${BACKUP_DIR}/"
 echo "~/life"
 time rsync -r --info=progress2 "life" "${BACKUP_DIR}/"
 
-echo "~/new_life"
-time rsync -r --info=progress2 "new_life" "${BACKUP_DIR}/"
+echo "~/life_new"
+time rsync -r --info=progress2 "life_new" "${BACKUP_DIR}/"
 
 # share.
 echo "~/_share_"
