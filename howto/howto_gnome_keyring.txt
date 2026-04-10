@@ -1,0 +1,6 @@
+# To solve zed error "The name is not activatable" (when using system path prompt to open directory).
+sudo pacman -S gnome-keyring
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-wlr
+# Couldn't open file picker due to missing xdg-desktop-portal implementation.
+sudo pacman -S xdg-desktop-portal-gtk
+systemctl --user restart xdg-desktop-portal.service
