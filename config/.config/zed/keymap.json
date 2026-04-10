@@ -49,5 +49,11 @@
     "bindings": {
       "alt-down": "editor::LineDown"
     }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-k ctrl-b": "editor::BlameHover"
+    }
   }
 ]
