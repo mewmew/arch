@@ -6,3 +6,8 @@
 # Icon Themes
 
 * `VSCode Great Icons Theme`
+
+# Languages
+
+* `Typst`
+* `LaTeX`
