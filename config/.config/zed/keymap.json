@@ -55,5 +55,11 @@
     "unbind": {
       "ctrl-k ctrl-b": "editor::BlameHover"
     }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-,": "editor::GoToPreviousHunk"
+    }
   }
 ]
