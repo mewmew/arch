@@ -1,2 +1,5 @@
 $ gsettings set org.cinnamon.desktop.default-applications.terminal exec lwt
 $ gsettings set org.cinnamon.desktop.interface can-change-accels true
+
+# edit ~/.gnome2/accels/nemo
+(gtk_accel_path "<Actions>/DirViewActions/OpenInTerminal" "F4")
