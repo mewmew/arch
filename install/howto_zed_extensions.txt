@@ -1,0 +1,8 @@
+# Themes
+
+* `Vercel Theme`
+* `Catppuccin`
+
+# Icon Themes
+
+* `VSCode Great Icons Theme`
