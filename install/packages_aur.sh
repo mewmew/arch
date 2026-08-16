@@ -5,6 +5,9 @@ AUR_PKGS=""
 # Wayland
 AUR_PKGS+=" startw"
 
+# Xorg
+AUR_PKGS+=" sx-startx"
+
 # Desktop
 AUR_PKGS+=" wdisplays"
 
