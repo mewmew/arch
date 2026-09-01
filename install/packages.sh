@@ -53,6 +53,9 @@ PKGS+=" speedcrunch"
 PKGS+=" tint2"
 PKGS+=" xcompmgr"
 
+# Hex Editor
+PKGS+=" hexyl"
+
 # Audio
 PKGS+=" alsa-lib"
 PKGS+=" alsa-utils"
