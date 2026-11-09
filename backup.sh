@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#export DST_DIR="/var/run/media/u/524f2cbb-1576-4963-babc-f4304acfbc36/apocalypse"
+
 if [[ -z ${DST_DIR// } ]]; then
 	#export DST_DIR="/mnt/backup"
 	export DST_DIR="${HOME}/backup"
@@ -63,11 +66,11 @@ time rsync -r --info=progress2 "_share_" "${BACKUP_DIR}/"
 #time rsync -r --info=progress2 "VirtualBox VMs" "${BACKUP_DIR}/"
 
 # Downloads.
-echo "~/dl"
-time rsync -r --info=progress2 "dl" "${BACKUP_DIR}/"
-
-# Downloads.
 echo "~/Downloads"
 time rsync -r --info=progress2 "Downloads" "${BACKUP_DIR}/"
+
+# Downloads.
+echo "~/dl"
+time rsync -r --info=progress2 "dl" "${BACKUP_DIR}/"
 
 echo "BACKUP DONE"
