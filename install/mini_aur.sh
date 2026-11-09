@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PKGS=""
+AUR_PKGS=""
 
 # Desktop
 AUR_PKGS+=" gmrun"

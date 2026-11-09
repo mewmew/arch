@@ -28,7 +28,7 @@ go install golang.org/x/tools/...@master
 #go install github.com/inspirer/textmapper@master
 
 # Autojump.
-go install github.com/gsamokovarov/jump@main
+#go install github.com/gsamokovarov/jump@main
 
 # Disk Space.
-go install github.com/muesli/duf@master
+#go install github.com/muesli/duf@master
