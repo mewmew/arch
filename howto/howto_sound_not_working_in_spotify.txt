@@ -1,0 +1,7 @@
+"Cannot play that song right now." in Spotify
+
+Fix. Replace `jack2` with `pipewire-jack`
+
+```bash
+sudo pacman -Sy pipewire-jack
+```
