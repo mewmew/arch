@@ -62,7 +62,7 @@ PKGS+=" slurp"
 PKGS+=" speedcrunch"
 PKGS+=" spotify-launcher"
 PKGS+=" sshfs"
-PKGS+=" sublime-text"
+#PKGS+=" sublime-text"
 PKGS+=" sway"
 PKGS+=" swaybg"
 PKGS+=" swaylock"
@@ -96,6 +96,8 @@ PKGS+=" zed"
 PKGS+=" zip"
 
 sudo pacman -Sy ${PKGS}
+
+exit 1
 
 AUR_PKGS=""
 AUR_PKGS+=" bless"

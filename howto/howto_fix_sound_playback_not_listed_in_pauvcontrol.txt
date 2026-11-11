@@ -1,0 +1,4 @@
+sudo pacman -Sy pipewire-pulse
+
+systemctl --user restart pipewire pipewire-pulse wireplumber
+
