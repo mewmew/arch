@@ -79,7 +79,10 @@ sar -i -unescape-replace "[\n]# (%wheel ALL=[(]ALL:ALL[)] ALL[\n])" "\n\${1}" /e
 # * Add 'encrypt' and 'lvm2' to HOOKS before filesystems.
 echo "Updating /etc/mkinitcpio.conf"
 sar -i -unescape-replace "[\n]MODULES=[(][)]" "\nMODULES=(ext4)" /etc/mkinitcpio.conf
-sar -i "([\n]HOOKS=[(][^\n]*block) filesystems" "\${1} encrypt lvm2 filesystems" /etc/mkinitcpio.conf
+# For udev:
+#sar -i "([\n]HOOKS=[(][^\n]*block) filesystems" "\${1} encrypt lvm2 filesystems" /etc/mkinitcpio.conf
+# For systemd:
+sar -i "([\n]HOOKS=[(][^\n]*block) filesystems" "\${1} sd-encrypt lvm2 filesystems" /etc/mkinitcpio.conf
 
 # Regenerate initrd image.
 mkinitcpio -p linux
@@ -91,14 +94,32 @@ else
 	grub-install --recheck /dev/${DISK}
 fi
 
+echo "TODO: validate contents of /etc/default/grub (i.e. correct UUID). Not tested :)"
+
 # Update /etc/default/grub.
 #
 # * Add 'cryptdevice=/dev/sdX3:luks:allow-discards' to GRUB_CMDLINE_LINUX.
 if [ ${USE_EFI} == "y" ]; then
+# For udev:
+#	sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '
+#GRUB_CMDLINE_LINUX="cryptdevice=/dev/'${DISK}${PART_PREFIX}'3:luks:allow-discards"' /etc/default/grub
+# For systemd:
+	# blkid /dev/nvme0n1p3
+	# Output: /dev/nvme0n1p3: UUID="505df108-5d06-43ca-b3ca-31cb4c2ce1ce" TYPE="crypto_LUKS" PARTUUID="8012ee31-10bc-4b86-9ce5-80db1e408d60"
+	# UUID="505df108-5d06-43ca-b3ca-31cb4c2ce1ce"
+	UUID=$(sudo blkid /dev/${DISK}${PART_PREFIX}3 2>&1 | sar '[^ ]+ UUID="([^"]+)".+' '$1')
 	sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '
-GRUB_CMDLINE_LINUX="cryptdevice=/dev/'${DISK}${PART_PREFIX}'3:luks:allow-discards"' /etc/default/grub
+GRUB_CMDLINE_LINUX="rd.luks.name='${UUID}'=luks root=/dev/mapper/vg0-root"' /etc/default/grub
 else
+# For udev:
+#	sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '
+#GRUB_CMDLINE_LINUX="cryptdevice=/dev/'${DISK}${PART_PREFIX}'2:luks:allow-discards"' /etc/default/grub
+# For systemd:
+	# blkid /dev/nvme0n1p3
+	# Output: /dev/nvme0n1p3: UUID="505df108-5d06-43ca-b3ca-31cb4c2ce1ce" TYPE="crypto_LUKS" PARTUUID="8012ee31-10bc-4b86-9ce5-80db1e408d60"
+	# UUID="505df108-5d06-43ca-b3ca-31cb4c2ce1ce"
+	UUID=$(sudo blkid /dev/${DISK}${PART_PREFIX}2 2>&1 | sar '[^ ]+ UUID="([^"]+)".+' '$1')
 	sar -i '[\n]GRUB_CMDLINE_LINUX=\"\"' '
-GRUB_CMDLINE_LINUX="cryptdevice=/dev/'${DISK}${PART_PREFIX}'2:luks:allow-discards"' /etc/default/grub
+GRUB_CMDLINE_LINUX="rd.luks.name='${UUID}'=luks root=/dev/mapper/vg0-root"' /etc/default/grub
 fi
 grub-mkconfig -o /boot/grub/grub.cfg
